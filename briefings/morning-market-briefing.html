@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morning Market Briefing — 10 November 2026</title>
+<style>
+  :root {
+    --ink: #1c1915;
+    --muted: #5e584e;
+    --rule: #e3d9cc;
+    --paper: #f6f1e8;
+    --card: #fffdf9;
+    --up: #0d6b4c;
+    --down: #9c2f2f;
+    --accent: #8e1e22;
+    --soft: #f3ebe1;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 17px/1.55 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  }
+  main { max-width: 880px; margin: 0 auto; padding: 32px 20px 64px; }
+  header.mast {
+    border-top: 4px solid var(--accent);
+    padding-top: 18px;
+    margin-bottom: 22px;
+  }
+  .kicker {
+    font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--accent);
+    margin: 0 0 8px;
+  }
+  h1 { font-size: 34px; line-height: 1.15; font-weight: 600; margin: 0 0 8px; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0; font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif; }
+  .lead {
+    font-size: 20px;
+    line-height: 1.45;
+    margin: 0 0 22px;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 0 0 28px;
+  }
+  .stat {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 10px 12px 12px;
+  }
+  .stat .lbl {
+    font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .stat .val { font-size: 20px; font-weight: 600; margin-top: 2px; }
+  .stat .sub { font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif; font-size: 12px; color: var(--muted); }
+  .up { color: var(--up); }
+  .down { color: var(--down); }
+  section { margin: 0 0 26px; }
+  h2 {
+    font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 650;
+    margin: 0 0 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0 0 10px; }
+  ul { margin: 0; padding-left: 1.15em; }
+  li { margin: 0 0 6px; }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .box {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 14px 16px;
+  }
+  .box h3 { margin: 0 0 8px; font-size: 18px; }
+  .box.spec { background: #fbf6ee; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 14px 16px 16px;
+  }
+  .pill {
+    display: inline-block;
+    font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    background: #e5f4ec;
+    color: var(--up);
+    border-radius: 999px;
+    padding: 3px 10px;
+    margin-bottom: 8px;
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; padding: 6px 8px 6px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+  .src { font-size: 15px; }
+  .src a { color: #6e2a22; }
+  footer {
+    border-top: 1px solid var(--rule);
+    margin-top: 10px;
+    padding-top: 14px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+  .chart-cap { font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif; font-size: 12px; color: var(--muted); margin: 6px 0 0; }
+  svg { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .stats, .split { grid-template-columns: 1fr 1fr; }
+    h1 { font-size: 28px; }
+  }
+  @media (max-width: 520px) {
+    .stats, .split { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="mast">
+    <p class="kicker">Swiss long-term ETF investor · Europe/Zurich</p>
+    <h1>Morning Market Briefing</h1>
+    <p class="meta">Tuesday 10 November 2026 · Late morning in Zurich. Cash markets in Europe were still open. Figures below carry the timestamp of the source.</p>
+  </header>
+
+  <p class="lead">Equities extended Monday’s rebound on Tuesday morning as oil fell further on signs Washington is holding off new strikes on Iran, but the session that matters for a long-term holder of a global equity exchange-traded fund is this afternoon’s United States inflation report, with markets already pricing a December rate increase.</p>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="lbl">S&amp;P 500 · Mon close</div>
+      <div class="val">7,549.94</div>
+      <div class="sub up">+2.35%</div>
+    </div>
+    <div class="stat">
+      <div class="lbl">STOXX 600 · 10:41 CET</div>
+      <div class="val">660.96</div>
+      <div class="sub up">+0.67% intraday</div>
+    </div>
+    <div class="stat">
+      <div class="lbl">Brent · Mon settle</div>
+      <div class="val">$92.57</div>
+      <div class="sub down">−5.85% · Tue ~$90</div>
+    </div>
+    <div class="stat">
+      <div class="lbl">VWRA in francs</div>
+      <div class="val">154.84</div>
+      <div class="sub">indicative · alerts quiet</div>
+    </div>
+  </div>
+
+  <section>
+    <h2>Americas</h2>
+    <p>Monday was a broad rebound. Reuters reported the Dow Jones Industrial Average up 1,104.02 points, or 2.15%, to 52,389.75; the Standard &amp; Poor’s 500 up 173.08 points, or 2.35%, to 7,549.94; and the Nasdaq Composite up 673.71 points, or 2.74%, to 25,253.14. CNBC called the Standard &amp; Poor’s 500 move its best day since 8 April. Reuters said that index was rebounding from its biggest weekly drop since April 2025. After the rally, CNBC noted, the Dow was back above its Election Day close, while the Standard &amp; Poor’s 500 and the Nasdaq were still slightly below theirs.</p>
+    <p>The bounce was broad in semiconductors and narrow at the top of that group. A semiconductor index rose 6.9% after falling more than 12% last week, and Nvidia was the only name in that index to fall. Nvidia, described by Reuters as the world’s second-most valuable company, dropped 4.2% to its lowest close since 7 April. The drop followed an internal investigation into whether a foreign intelligence effort had targeted chief executive Jensen Huang. Investors were, in Reuters’ wording, questioning his future at the firm. That is a governance headline, not a published finding that he will leave.</p>
+    <p>The macro tape under the rally is still tight. Friday’s employment report showed employers added 165,000 jobs in October, which Reuters called a blowout. CNBC reported the unemployment rate at 4.1%. The yield on the 10-year Treasury note rose 1.48 basis points to 4.874%. Fed funds futures put an 84% chance on a Federal Reserve rate increase in December, up after that jobs report. The Federal Reserve held its benchmark rate in October, CNBC reported, and the next meeting is 8–9 December. The dollar eased on Monday: the euro rose 0.72% to $1.1223, and the dollar fell 0.34% to 157.91 yen.</p>
+    <p>CNBC, citing the Atlanta Fed, put third-quarter gross domestic product growth at 3.4% and the current-quarter tracking estimate at 3.5%. Early Tuesday, Reuters said futures on the Standard &amp; Poor’s 500 were only slightly higher after Monday’s jump. That futures comment was from the Asian morning, so it is context, not a live New York quote.</p>
+  </section>
+
+  <section>
+    <h2>Europe and Switzerland</h2>
+    <p>Monday’s pan-European STOXX 600 rose 1.26%, with banks helped by deal talk and results. Credit Agricole proposed that its Italian subsidiary merge with Banco BPM. UniCredit posted a 24% annual rise in third-quarter earnings, ahead of forecasts, and raised its full-year profit goal. MSCI’s global equity gauge rose 2.16% to 1,108.96.</p>
+    <p>Tuesday’s follow-through was still underway at mid-morning. Reuters put the STOXX 600 up 0.67% at 660.96 as of 09:41 GMT (10:41 Central European Time), within 1% of the record last reached in early August. Benchmark indexes in Germany, France and Italy were each up about 1%. Banks led sectors, up 2.6%. Oil and gas shares were down 1.1%. Associated Press indications around 09:47 UTC had the DAX up 1.3% at 26,267.19, the CAC 40 up 1.2% at 8,233.30, and the FTSE 100 up 0.4% at 10,830.12. Those are open-session readings, not closes.</p>
+    <p>Infineon rose 6.6% after forecasting revenue growth of more than 20% in 2027 and a profitability increase of about five percentage points, on demand from data centres, power infrastructure and software-defined vehicles. Reuters said Europe’s third-quarter earnings are now expected to rise 25%, versus an earlier estimate near 16%, citing LSEG data, and that the earnings-growth gap with the United States has narrowed to its smallest in more than three years (Deutsche Bank). Lufthansa and Air France-KLM were each up about 1% as fuel costs eased. Reuters also said investors expect the European Central Bank to wait for more data through year-end and possibly raise rates by February. That is anticipation, not a decision.</p>
+    <p>In Zurich, Monday’s Swiss Market Index close was 14,946.15, according to finanzen.ch. From the 30 December 2025 close of 13,267.48 on the same page, that is a price gain of about 12.7% for 2026 to date. Around 09:15, L’Agefi had the Swiss Market Index up 0.67% at 15,046.87, the Swiss Leader Index up 0.57% at 2,413.90, and the Swiss Performance Index up 0.64% at 21,153.10. Roche, Nestlé and Novartis were only modestly higher, about 0.3% to 0.4%. The 5 November high of 15,092.56, also from finanzen.ch, was still above the morning print. The session had not closed. Local reporters flagged results from PSP Swiss Property, Sunrise, LEM and BKW.</p>
+  </section>
+
+  <section>
+    <h2>Asia and commodities</h2>
+    <p>Asia closed before Europe opened and took the Monday lead from New York. Reuters said Japan’s Nikkei rose 2.9% and South Korea’s KOSPI rose 4.4%, while MSCI’s broad Asia-Pacific index rose about 2% and moved off the seven-month low hit last week. Yonhap reported the KOSPI close at 5,239.13, up 220.28 points, which matches that 4.4% move. A verified point close for the Nikkei was not in the wire copy used here, so the percentage stands without an index level.</p>
+    <p>Oil is the other half of the story. Brent crude settled Monday down $5.75, or 5.85%, at $92.57 a barrel. West Texas Intermediate settled down $3.98, or 4.38%, at $86.85. On Tuesday morning Reuters said Brent was down more than 2% and had dipped below $90 for the first time since late August, to about $90 a barrel. President Donald Trump said he was highly unlikely to order fresh attacks on Iran as long as talks progressed, and later that he planned to hold off on new strikes for the time being after appeals from the region, including Qatar’s prime minister. Reuters also reported that both sides had said shipping was hit in or near the Strait of Hormuz. The price is trading a pause in strikes, not a signed peace.</p>
+    <p>Spot gold was down 0.6% at $4,114.48 an ounce as of 04:30 GMT, after rising more than 1% in the previous session, Reuters reported. December gold futures were up 0.2% at $4,123.50. In the same note, spot silver was down 0.5% at $53.14, platinum was steady at $1,576.44, and palladium was down 0.2% at $1,039.47. Richmond Fed president Tom Barkin said policy should move “with care” and that he had no base case for December. Traders’ 84% December hike probability, via the CME FedWatch tool in that Reuters copy, is the same figure the rates market was carrying after Friday’s jobs data.</p>
+  </section>
+
+  <section>
+    <h2>Long-term ETF lens</h2>
+    <p>The portfolio anchor in this note is the Vanguard FTSE All-World UCITS ETF (Undertakings for Collective Investment in Transferable Securities), accumulating share class, London listing VWRA, priced in United States dollars. It is not a Swiss-franc share on SIX. A franc figure below is the London dollar price multiplied by the dollar/franc rate. It is a translation for a Swiss holder, not a traded CHF quote.</p>
+    <ul>
+      <li>From the 31 December 2025 close of 170.62 dollars to Monday’s close of 187.54 dollars, the share price rose 9.9%. Because this share class accumulates income inside the fund, that price change is the holding-period result in dollars before the franc.</li>
+      <li>Yahoo Finance shows the dollar up 3.60% against the Swiss franc in 2026 to date, and down 1.31% over the past month. An unhedged holder has had a currency tailwind this year and has given a slice of it back recently. Monday’s softer dollar against the euro (up 0.72% to $1.1223) is a reminder that the franc leg and the equity leg do not have to move together.</li>
+      <li>Monday’s 2.16% rise in MSCI’s global gauge, and Tuesday’s firmer European open, repair part of last week’s drop. They do not change a multi-year allocation. The Standard &amp; Poor’s 500 is still a large weight inside a global fund, so United States inflation and the artificial-intelligence complex will move VWRA more than a quiet morning in Roche, Nestlé and Novartis moves the Swiss Market Index.</li>
+      <li>The slow risk is the discount rate. A 10-year yield at 4.874% and an 84% market probability of a December hike mean new savings should still follow the existing contribution rule. They are not a reason to rebuild the portfolio around one morning’s oil move.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Hottest tactical</h2>
+    <p>The live trade is “oil down, equities up,” led by last week’s laggards. European banks were up 2.6% by 10:41 CET, airlines gained about 1%, and Infineon was up 6.6% on a 2027 guide tied to data centres and power. On Monday the semiconductor index jumped 6.9% even as Nvidia fell 4.2%. Reuters quoted a New York investor calling the prior selloff stretched and the buying a mix of short-covering, bargain-hunting and momentum. That is a positioning rebound after a weekly shock tied to the United States midterm elections and worry about artificial-intelligence and data-centre rules. It is not new evidence that those earnings are durable. For a fund that already owns the global market, this is something to watch, not something to chase with a side bet.</p>
+  </section>
+
+  <section>
+    <h2>Biggest risk</h2>
+    <p>Today’s Consumer Price Index, at 14:30 Central European Time, can reprice the rate path that equities just rallied into. The Dow Jones consensus, reported by CNBC, and the Reuters poll agree: headline prices up 0.3% on the month and core prices, excluding food and energy, up 0.2%. Both would be slower than September’s 0.6% and 0.3%. CNBC, citing the Energy Information Administration, said pump prices fell more than 4% in October, which can cool the headline without settling the rest of the basket. There will be no official year-on-year rate for October, because last year’s federal shutdown left the Bureau of Labor Statistics without a comparable index level. Chicago Fed president Austan Goolsbee said Monday that the problem “has all been on the inflation side.” Bank of America told clients that, unless the monthly print is an “indisputably soft” 0.1%, it doubts the report will stop a December hike. That is a forecast. The fact is that markets have already assigned an 84% probability, so a hot monthly number has less room to be shrugged off, and a soft one is the surprise that would challenge the rally’s rate backdrop.</p>
+    <p>The second channel is oil. Brent’s slide assumes the pause in strikes lasts. Shipping incidents were still being reported around Hormuz as prices fell. A setback in talks would put the geopolitical premium back into energy, and back into the inflation debate, quickly.</p>
+  </section>
+
+  <section>
+    <h2>Calendar</h2>
+    <p>Times from the Bureau of Labor Statistics are 08:30 Eastern Time, which is 14:30 Central European Time.</p>
+    <ul>
+      <li><strong>Tuesday 10 November, 14:30 CET.</strong> Consumer Price Index for October, and Real Earnings for October. Still ahead at the time of this note.</li>
+      <li><strong>Wednesday 11 November.</strong> Veterans Day on the Bureau of Labor Statistics calendar. This note does not assume a stock-exchange holiday.</li>
+      <li><strong>Friday 13 November, 14:30 CET.</strong> Producer Price Index for October.</li>
+      <li><strong>8–9 December.</strong> Federal Reserve meeting, as cited by CNBC. This afternoon’s report is the last inflation release before it.</li>
+      <li><strong>This week, days not stated by the wire.</strong> Results from CoreWeave, Applied Materials and Cisco, which Reuters flagged as a test of whether artificial-intelligence spending is earning its cost. Infineon’s outlook is already out. In Switzerland, the morning docket included PSP Swiss Property, Sunrise, LEM and BKW.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>VWRA in Swiss francs</h2>
+    <div class="card">
+      <span class="pill">140 and 135 not triggered</span>
+      <p>Yahoo Finance showed VWRA at 188.72 dollars at 09:47 GMT (10:47 Central European Time), up 1.18 dollars, or 0.63%, from Monday’s close of 187.54, with the London market open. Monday’s completed session rose 2.56 dollars, or 1.38%, from 184.98. Yahoo Finance showed the dollar at 0.8205 francs at 10:08 GMT (11:08 Central European Time), up 0.0014, or 0.17%, from a previous close of 0.8191. The day’s dollar/franc range at that time was 0.8174 to 0.8211.</p>
+      <table>
+        <thead>
+          <tr><th>Reading</th><th>Dollars</th><th>Francs</th><th>How it is built</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tuesday morning print</td>
+            <td>188.72</td>
+            <td>154.84</td>
+            <td>188.72 × 0.8205, the two Yahoo prints above. Times differ by about 20 minutes.</td>
+          </tr>
+          <tr>
+            <td>Monday close, translated</td>
+            <td>187.54</td>
+            <td>153.61</td>
+            <td>187.54 × 0.8191, using Yahoo’s previous dollar/franc close. Approximate, not an official fix.</td>
+          </tr>
+          <tr>
+            <td>Recent dollar low, at today’s rate</td>
+            <td>184.98</td>
+            <td>151.78</td>
+            <td>6 November close × 0.8205. Illustrates distance to the alerts. It ignores that day’s actual franc rate.</td>
+          </tr>
+          <tr>
+            <td>Alert</td>
+            <td>—</td>
+            <td>140</td>
+            <td>About 9.6% under the 154.84 indication.</td>
+          </tr>
+          <tr>
+            <td>Alert</td>
+            <td>—</td>
+            <td>135</td>
+            <td>About 12.8% under the 154.84 indication.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p style="margin-top:14px">Dollar closes on the London listing, 1 October through 9 November 2026. The line is the traded price. It is not a franc history. High 195.58 dollars on 6 October. Low 184.98 dollars on 6 November. Last complete close 187.54 dollars on 9 November.</p>
+      <svg viewBox="0 0 680 148" role="img" aria-label="Sparkline of VWRA dollar closes from 1 October to 9 November 2026">
+        <rect x="0" y="0" width="680" height="148" fill="#fffdf9"></rect>
+        <path d="M16,132 L16,74.2 40,53 64,43.7 88,28.8 112,47.9 136,55.1 160,46.6 184,44.7 208,49.8 232,61.2 256,63.8 280,62.1 304,62.9 328,64.8 352,57 376,79.3 400,79.8 424,75.5 448,65.3 472,62.4 496,65.5 520,88.8 544,78.9 568,92.7 592,70.9 616,108.1 640,119.2 664,97.3 L664,132 Z" fill="#f3e4d6"></path>
+        <polyline fill="none" stroke="#8e1e22" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" points="16,74.2 40,53 64,43.7 88,28.8 112,47.9 136,55.1 160,46.6 184,44.7 208,49.8 232,61.2 256,63.8 280,62.1 304,62.9 328,64.8 352,57 376,79.3 400,79.8 424,75.5 448,65.3 472,62.4 496,65.5 520,88.8 544,78.9 568,92.7 592,70.9 616,108.1 640,119.2 664,97.3"></polyline>
+        <circle cx="640" cy="119.2" r="3.2" fill="#9c2f2f"></circle>
+        <circle cx="664" cy="97.3" r="3.6" fill="#1c1915"></circle>
+        <text x="16" y="144" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#5e584e">1 Oct</text>
+        <text x="600" y="144" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#5e584e">6 Nov low · 9 Nov</text>
+      </svg>
+      <p class="chart-cap">Source of closes: Yahoo Finance, VWRA.L history. The dot at the right is the 9 November close. The lower dot is the 6 November low.</p>
+
+      <p style="margin-top:12px">Where 154.84 sits against the two franc alerts. The scale runs from 128 to 168 francs. Both alerts are well to the left of the recent range.</p>
+      <svg viewBox="0 0 680 78" role="img" aria-label="Gauge of the indicative VWRA franc level versus 135 and 140">
+        <rect x="0" y="0" width="680" height="78" fill="#fffdf9"></rect>
+        <line x1="20" y1="36" x2="660" y2="36" stroke="#e3d9cc" stroke-width="8" stroke-linecap="round"></line>
+        <line x1="132" y1="22" x2="132" y2="50" stroke="#9c2f2f" stroke-width="2"></line>
+        <line x1="212" y1="22" x2="212" y2="50" stroke="#9c2f2f" stroke-width="2"></line>
+        <circle cx="449.4" cy="36" r="7" fill="#0d6b4c"></circle>
+        <text x="132" y="68" text-anchor="middle" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#9c2f2f">135</text>
+        <text x="212" y="68" text-anchor="middle" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#9c2f2f">140</text>
+        <text x="449" y="18" text-anchor="middle" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="12" fill="#0d6b4c">154.84 indicative</text>
+      </svg>
+    </div>
+  </section>
+
+  <section>
+    <h2>Fact versus speculation</h2>
+    <div class="split">
+      <div class="box">
+        <h3>Reported</h3>
+        <ul>
+          <li>Monday’s three United States index closes, Brent at $92.57 and West Texas Intermediate at $86.85, Nvidia down 4.2%, semiconductors up 6.9%.</li>
+          <li>Tuesday morning levels that are explicitly intraday: STOXX 600 at 660.96 as of 09:41 GMT, Swiss Market Index at 15,046.87 around 09:15, gold at $4,114.48 as of 04:30 GMT, VWRA at 188.72 dollars at 09:47 GMT, dollar/franc at 0.8205 at 10:08 GMT.</li>
+          <li>October payrolls up 165,000. Unemployment rate 4.1%, as reported by CNBC. The 10-year yield at 4.874%. An 84% futures-implied chance of a December hike.</li>
+          <li>The Consumer Price Index is due at 14:30 Central European Time. The published consensus is +0.3% headline and +0.2% core. Officials will not publish an October year-on-year rate.</li>
+          <li>Democrats won control of Congress in last week’s midterm elections, as stated by Reuters.</li>
+        </ul>
+      </div>
+      <div class="box spec">
+        <h3>Not established</h3>
+        <ul>
+          <li>That talks produce a durable end to the Iran war. The market is pricing a pause in strikes. Shipping incidents were still in the Monday story.</li>
+          <li>That Jensen Huang leaves Nvidia. The share fell on an investigation and on questions about his future. No departure has been reported here.</li>
+          <li>That the Federal Reserve will hike on 8–9 December. Eighty-four percent is a traded probability. Barkin said he had no base case. Bank of America’s “lock in” language is a forecast, as is its interpolated 3.8% headline and 2.7% core annual rates, which are not Bureau of Labor Statistics figures.</li>
+          <li>That the STOXX 600 closes at a record today. At 10:41 CET it was within 1% of the August high, with hours left.</li>
+          <li>That the European Central Bank hikes by February. Reuters described that as what investors anticipate.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Sources</h2>
+    <ul class="src">
+      <li>Reuters, via Euronext, Monday wrap: <a href="https://live.euronext.com/en/financial-news/stocks-jump-oil-tumbles-nvidia-falls-amid-internal-probe">https://live.euronext.com/en/financial-news/stocks-jump-oil-tumbles-nvidia-falls-amid-internal-probe</a></li>
+      <li>CNBC, Monday United States close: <a href="https://www.cnbc.com/2026/11/08/stock-market-today-live-updates.html">https://www.cnbc.com/2026/11/08/stock-market-today-live-updates.html</a></li>
+      <li>Reuters, Tuesday Europe, via Investing.com: <a href="https://www.investing.com/news/economy-news/european-shares-near-record-high-as-lower-oil-prices-boost-sentiment-5014345">https://www.investing.com/news/economy-news/european-shares-near-record-high-as-lower-oil-prices-boost-sentiment-5014345</a></li>
+      <li>Reuters, Tuesday Asia and oil, via Investing.com Canada: <a href="https://ca.investing.com/news/economy-news/asian-stocks-climb-as-sliding-oil-prices-buoy-sentiment-4945008">https://ca.investing.com/news/economy-news/asian-stocks-climb-as-sliding-oil-prices-buoy-sentiment-4945008</a></li>
+      <li>Associated Press, Tuesday global markets: <a href="https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7">https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7</a></li>
+      <li>Reuters, Tuesday gold, via Business Recorder: <a href="https://www.brecorder.com/news/40448235/gold-edges-lower-as-focus-shifts-to-us-inflation-data">https://www.brecorder.com/news/40448235/gold-edges-lower-as-focus-shifts-to-us-inflation-data</a></li>
+      <li>Yonhap, KOSPI close: <a href="https://en.yna.co.kr/view/AEN20261110007600320">https://en.yna.co.kr/view/AEN20261110007600320</a></li>
+      <li>CNBC, what to expect from the October Consumer Price Index: <a href="https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html">https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html</a></li>
+      <li>Bureau of Labor Statistics, November 2026 release schedule: <a href="https://www.bls.gov/schedule/2026/11_sched_list.htm">https://www.bls.gov/schedule/2026/11_sched_list.htm</a></li>
+      <li>L’Agefi, Swiss open: <a href="https://agefi.com/actualites/marches/la-bourse-suisse-ouvre-en-hausse-avant-linflation-americaine-2">https://agefi.com/actualites/marches/la-bourse-suisse-ouvre-en-hausse-avant-linflation-americaine-2</a></li>
+      <li>finanzen.ch, Swiss Market Index levels: <a href="https://www.finanzen.ch/nachrichten/aktien/gute-stimmung-in-zuerich-smi-zum-start-des-dienstagshandels-im-aufwind-1036741513">https://www.finanzen.ch/nachrichten/aktien/gute-stimmung-in-zuerich-smi-zum-start-des-dienstagshandels-im-aufwind-1036741513</a></li>
+      <li>Yahoo Finance, VWRA.L history and latest print: <a href="https://finance.yahoo.com/quote/VWRA.L/history/">https://finance.yahoo.com/quote/VWRA.L/history/</a></li>
+      <li>Yahoo Finance, USD/CHF: <a href="https://finance.yahoo.com/quote/USDCHF=X/">https://finance.yahoo.com/quote/USDCHF=X/</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Not investment advice. This is a news briefing for a long-term holder of a broad equity exchange-traded fund. It is not a recommendation to buy, sell, or change a hedge. Prices move. Some quotes were delayed or taken while the cash session was still open. The franc figure for VWRA is a cross-rate translation of the London dollar listing, using two Yahoo Finance prints that are not simultaneous, and it is not a SIX price. Alert levels at 140 and 135 francs are watch points supplied for this note. They were not reached on these figures. Verify anything you would trade against the exchange and against the primary release, especially the Consumer Price Index when it prints.</p>
+  </footer>
+</main>
+</body>
+</html>
