@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morning Market Briefing — 14 November 2026</title>
+<style>
+  :root {
+    --paper: #f3efe6;
+    --card: #fbf9f4;
+    --ink: #1c1915;
+    --muted: #5c564c;
+    --line: #d9d1c3;
+    --red: #8e2f2a;
+    --green: #1f6b45;
+    --gold: #8a5a12;
+    --chip: #efe8da;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); }
+  body {
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 32px 20px 64px;
+    color: var(--ink);
+    font-family: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  header.mast {
+    border-top: 4px solid var(--ink);
+    padding-top: 14px;
+    margin-bottom: 22px;
+  }
+  .kicker {
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--red);
+    font-weight: 700;
+    margin: 0 0 6px;
+  }
+  h1 {
+    font-size: 34px;
+    line-height: 1.15;
+    font-weight: 600;
+    margin: 0 0 8px;
+  }
+  .meta {
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: var(--muted);
+    margin: 0;
+  }
+  .lead {
+    font-size: 22px;
+    line-height: 1.35;
+    margin: 0 0 22px;
+  }
+  h2 {
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin: 28px 0 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--line);
+  }
+  h3 {
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin: 0 0 8px;
+  }
+  p { margin: 0 0 12px; }
+  a { color: var(--red); }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 0 0 8px;
+  }
+  .stat {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 10px 12px 12px;
+  }
+  .stat .lbl {
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .stat .num {
+    font-variant-numeric: tabular-nums;
+    font-size: 22px;
+    line-height: 1.2;
+    margin-top: 2px;
+  }
+  .stat .sub {
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .down { color: var(--red); }
+  .up { color: var(--green); }
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px 16px 6px;
+  }
+  .card.full { grid-column: 1 / -1; }
+  ul { margin: 0 0 12px; padding-left: 1.15em; }
+  li { margin: 0 0 6px; }
+  .note {
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: var(--muted);
+    background: var(--chip);
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin: 0 0 14px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-variant-numeric: tabular-nums;
+    font-size: 16px;
+    margin: 0 0 12px;
+  }
+  th, td {
+    text-align: left;
+    padding: 6px 8px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  td.r, th.r { text-align: right; }
+  .pill {
+    display: inline-block;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: #e5f4eb;
+    color: var(--green);
+  }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .fact, .spec {
+    border-radius: 12px;
+    padding: 12px 14px 4px;
+    border: 1px solid var(--line);
+  }
+  .fact { background: #f3f7f4; }
+  .spec { background: #faf6ee; }
+  .src {
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+  }
+  .src li { margin-bottom: 8px; word-break: break-word; }
+  footer.disc {
+    margin-top: 28px;
+    border-top: 1px solid var(--line);
+    padding-top: 12px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  svg.spark { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    body { font-size: 17px; padding: 20px 14px 48px; }
+    h1 { font-size: 28px; }
+    .lead { font-size: 20px; }
+    .stats, .grid2, .split { grid-template-columns: 1fr; }
+  }
+  @media print {
+    body { max-width: none; background: white; }
+    a { color: var(--ink); text-decoration: none; }
+    .src a::after { content: " (" attr(href) ")"; font-size: 11px; }
+  }
+</style>
+</head>
+<body>
+<header class="mast">
+  <p class="kicker">Morning Market Briefing · Swiss long-term ETF holder</p>
+  <h1>Saturday 14 November 2026</h1>
+  <p class="meta">Written for 07:30 Europe/Zurich (Central European Time, UTC+1). Cash equities, bonds and commodities below are Friday 13 November closes unless a clock time is printed. Asia has finished its Friday session. The SIX Swiss Exchange, European cash markets and Wall Street are shut for the weekend. The next Swiss print is Monday.</p>
+</header>
+
+<p class="lead">The accumulating Vanguard FTSE All-World UCITS ETF (Undertakings for Collective Investment in Transferable Securities; ticker VWRA) closed Friday at 157.16 Swiss francs, still well above the 140 and 135 franc alerts, after Nvidia fell for a sixth straight week, October producer prices rose 6.5 percent on the year, and the 10-year US Treasury yield finished the week at 5.152 percent on the 3 p.m. Tradeweb close.</p>
+
+<section>
+  <h2>Session stats</h2>
+  <div class="stats">
+    <div class="stat">
+      <div class="lbl">S&amp;P 500</div>
+      <div class="num">7,561.67</div>
+      <div class="sub down">−30.73 · −0.40% · week +2.51%</div>
+    </div>
+    <div class="stat">
+      <div class="lbl">Dow Jones Industrial Average</div>
+      <div class="num">52,347.55</div>
+      <div class="sub up">+50.46 · +0.10% · week +2.07%</div>
+    </div>
+    <div class="stat">
+      <div class="lbl">Nasdaq Composite</div>
+      <div class="num">25,136.27</div>
+      <div class="sub down">−229.82 · −0.91% · week +2.27%</div>
+    </div>
+    <div class="stat">
+      <div class="lbl">STOXX Europe 600</div>
+      <div class="num">+0.02%</div>
+      <div class="sub">Level not in the Reuters close. Best week since late June.</div>
+    </div>
+    <div class="stat">
+      <div class="lbl">Swiss Market Index</div>
+      <div class="num">15,106.12</div>
+      <div class="sub down">−0.29% · week +2.1% · AWP</div>
+    </div>
+    <div class="stat">
+      <div class="lbl">VWRA on SIX, francs</div>
+      <div class="num">157.16</div>
+      <div class="sub down">−1.02 · −0.64%</div>
+    </div>
+    <div class="stat">
+      <div class="lbl">US 10-year, 3 p.m.</div>
+      <div class="num">5.152%</div>
+      <div class="sub">+0.051 pt on the day · Tradeweb</div>
+    </div>
+    <div class="stat">
+      <div class="lbl">Brent crude, settle</div>
+      <div class="num">$95.84</div>
+      <div class="sub up">+$0.02 · +0.02%</div>
+    </div>
+    <div class="stat">
+      <div class="lbl">Dollar per Swiss franc</div>
+      <div class="num">0.839 / 0.8394</div>
+      <div class="sub">Reuters 16:52 New York · AWP 21:11 Zurich</div>
+    </div>
+  </div>
+  <p class="note">Where two dispatches still on the page disagree, both are printed. The Reuters equity close has the dollar index up 0.17 percent at 103.40 and the euro down 0.29 percent at $1.1021. A separate Reuters currency story time-stamped 4:52 p.m. Eastern has the dollar index up 0.15 percent at 103.37 and the euro down 0.26 percent at $1.103. AWP’s evening note has the euro at $1.1023. The 10-year yield is the Dow Jones data note from Tradeweb FTSE US Treasury Closing Prices at 3 p.m. Eastern. The Reuters equity close did not print a 10-year last. These figures are shown as published.</p>
+</section>
+
+<section>
+  <h2>Americas</h2>
+  <div class="card">
+    <p>United States stocks finished Friday mixed, and the week still closed higher. The Standard &amp; Poor’s 500 fell 30.73 points, or 0.40 percent, to 7,561.67. The Nasdaq Composite fell 229.82 points, or 0.91 percent, to 25,136.27. The Dow Jones Industrial Average rose 50.46 points, or 0.10 percent, to 52,347.55. For the week the Standard &amp; Poor’s 500 gained 2.51 percent, the Nasdaq rose 2.27 percent and the Dow climbed 2.07 percent. Reuters said the Nasdaq and the Standard &amp; Poor’s 500 both snapped a four-week streak of declines. MSCI’s gauge of stocks across the globe fell 4.15 points, or 0.37 percent, to 1,112.12.</p>
+    <p>The chip complex gave back Thursday’s bounce. Nvidia finished 2 percent lower and recorded a sixth straight weekly decline, its longest since October 2012. The Philadelphia semiconductor index fell 3.4 percent. Advanced Micro Devices dropped 8.8 percent and Broadcom fell 4.8 percent, and Reuters named them the biggest drags on that index. The Standard &amp; Poor’s 500 technology sector fell 1.7 percent, the worst of the 11 sectors. Microsoft ended 0.2 percent higher after a global outage of Outlook and Teams began to ease. Reuters said the company still had no timeline for full recovery. Data-centre names IREN lost 6.7 percent and Applied Digital fell 5.8 percent. Declining issues outnumbered advancers by 1.28 to 1 on the New York Stock Exchange and by 1.61 to 1 on the Nasdaq. Volume was 16.38 billion shares, against a 20-day average of 18.52 billion.</p>
+    <p>In the final minutes the Federal Aviation Administration issued a national ground stop on departing flights, which it described as due to “extraordinary circumstance and reasons for safety” after reporting serious air-traffic-control communications problems. The NYSE Arca airline index closed down 1.4 percent.</p>
+    <p>The inflation print is Friday’s official number, and it did not take a December hike off the table. The Bureau of Labor Statistics said the Producer Price Index for final demand rose 0.3 percent in October, after 1.4 percent in September and 0.4 percent in August. Economists polled by Reuters had forecast 0.4 percent; Reuters also said the September reading was revised up from 1.3 percent. On an unadjusted basis the index rose 6.5 percent over the 12 months to October, and the Bureau said that was the largest 12-month rise since 7.4 percent in November 2022. Goods rose 0.5 percent and services rose 0.2 percent. The index excluding foods, energy and trade services rose 0.5 percent on the month, the same as in September, and 4.9 percent on the year. Final-demand goods were up 10.2 percent on the year. Reuters’ producer-price story said the Federal Reserve left its benchmark overnight rate in a 3.75 to 4.00 percent range last month, and that the government reported last week an unemployment rate of 4.1 percent, down from 4.2 percent in September.</p>
+    <p>Rate pricing moved around the afternoon, and the published snapshots are left as they were written. At 2:05 p.m. Eastern, Reuters’ gold story put the chance of a 25-basis-point December hike at 91.4 percent, down from 96.2 percent before the producer-price report, and the chance of a 50-basis-point hike at 8.6 percent, down from 13.8 percent, on the CME Group’s FedWatch tool. The later technology closing story said a hike of at least 25 basis points at the December meeting was fully priced, with roughly a 10 percent chance of a 50-basis-point move. The equity closing wrap put that 50-basis-point chance at 11 percent for the 8–9 December meeting, against zero a week earlier. The 4:52 p.m. currency story put the chance of a 25-basis-point hike at roughly 90 percent. Those four readings are quoted as published.</p>
+    <p>The 2-year yield in the equity close was last up 0.34 basis point at 4.867 percent, after a session high of 4.892 percent, the highest since 14 October. That story said the weekly rise was the largest since the first week of October 2024. The currency story, written as the week was still being marked, had the 2-year around 4.87 percent and up about 34 basis points on the week, which it called the biggest weekly jump since April 2025. The 10-year yield in the Dow Jones note rose 0.051 percentage point on the day to 5.152 percent, and 0.294 percentage point on the week. Dow Jones called that the largest one-week gain since 11 April 2025, the highest yield since 14 October 2026, and the end of a five-week streak of falling yields. The note’s price for that close is 98 and 26/32. The data are 3 p.m. Eastern Tradeweb FTSE closing prices.</p>
+    <p>The dollar extended its run. The equity close has the dollar index, Reuters’ basket against currencies including the yen and the euro, up 0.17 percent at 103.40, the highest since April 2025, a fourth straight daily gain. The currency story has it up 0.15 percent at 103.37 and on track for its biggest weekly gain since September. Against the Swiss franc, that currency story had the dollar up 0.47 percent at 0.839. AWP at 21:11 Zurich had it at 0.8394, after 0.8360 in Asia-influenced trade, with a session high of 0.8398 that AWP called a new 52-week high. One franc at the 0.839 print is the reciprocal, about 1.192 dollars. That reciprocal is arithmetic on the Reuters print. The yen in the currency story was steady at 159.70 per dollar, around its weakest since early September and down about 1 percent on the week. Japanese finance minister Satsuki Katayama said the government would respond appropriately to currency volatility. San Francisco Federal Reserve president Mary Daly said her bias was that the central bank would need to raise its policy rate. Boston Federal Reserve president Susan Collins said tighter policy was coming because inflation is high. Those are the officials’ comments as Reuters reported them on Friday.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Europe and Switzerland</h2>
+  <div class="card">
+    <p>Europe kept the week and gave a little back on the day. The STOXX Europe 600 ended up 0.02 percent. Reuters did not print the closing level in that story, so none is given here. It did say the index recorded its best week since late June, helped by earnings and a rotation out of technology. The Euro Stoxx 50 closed 0.19 percent lower at 6,386.86, according to AWP. AWP called the week, up 3.5 percent, the strongest since April, and said Thursday’s close had been the highest since the end of August. London’s FTSE 100 rose 0.36 percent to 10,902.56.</p>
+    <p>The Swiss Market Index fell 0.29 percent to 15,106.12. AWP said that still left a weekly gain of 2.1 percent, after four rising sessions, and that the index had set a new all-time high at 15,200 the day before and was established above 15,000. The Swiss Performance Index fell 0.25 percent to 21,257.73. The mid-cap SMIM rose 0.10 percent to 3,272.10. Fourteen of the 20 Swiss Market Index names closed lower, five closed higher, and Lonza was unchanged. Nestlé rose 1.3 percent and Alcon rose 1.8 percent. Richemont fell 3.8 percent after half-year figures: AWP said the result was mostly well received, and that some analysts focused on softer-than-expected growth in jewellery. Swatch, more exposed to watches, where AWP said Richemont had surprised positively, rose 2.4 percent. Sandoz fell 2.7 percent and Galderma fell 1.5 percent. In the broader market AMS Osram fell 9.1 percent after a third-quarter margin miss and a weaker fourth-quarter outlook.</p>
+    <p>AWP’s Europe close put the same Richemont move at almost 4 percent and named utilities and insurers among the region’s gainers. Enel rose after a strong nine-month profit. Aviva rose 3.4 percent; RBC described the third quarter as solid and said full-year targets were confirmed. Generali fell a bit more than 1 percent, with natural-catastrophe claims of nearly 1.5 billion euros in nine months and 1.8 billion euros including man-made events. Robert Greil of Merck Finck told AWP that when the artificial-intelligence sector weakens, European markets hold up better than American and Asian ones, and that the focus was shifting toward what he called reliable quality. That is one strategist’s view. AWP also quoted traders saying higher bond yields had brought inflation and interest-rate worries back to the foreground. At the European close, AWP had Brent still a little above 96 dollars and little changed on the evening, which lines up with the later New York settle of $95.84.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Asia and commodities</h2>
+  <div class="card">
+    <p>Friday’s Asian session is a finished close. Yonhap Infomax’s levels and Radio Television Hong Kong’s rounded closes match on the indexes both reported.</p>
+    <p>Japan’s Nikkei 225 closed at 61,142.35, up 322.99 points, or 0.53 percent. It had been as high as 61,902.50 in the morning, up 1.78 percent, and then gave back most of that. Radio Television Hong Kong said the day’s gain left the Nikkei up 6.46 percent on the week, its biggest weekly rise in five months. Topix closed at 3,941.57, up 4.24 points, or 0.11 percent, and Radio Television Hong Kong put the weekly gain at 6.3 percent. Yonhap said the afternoon fade arrived as Korea’s Kospi turned lower. The Kospi itself closed 52 points, or 0.98 percent, lower on the day. Radio Television Hong Kong did not print the Kospi level, so none is given here. It did say the Kospi still rose 4.56 percent on the week, after a 12 percent drop the week before. Taiwan’s Taiex rose 1.35 percent to 43,675.12. Taiwan Semiconductor Manufacturing closed slightly higher at 2,350 Taiwan dollars, Yonhap said.</p>
+    <p>Hong Kong and the mainland went the other way, a third down day for the Hang Seng. The Hang Seng Index closed at 23,637.60, down 370.95 points, or 1.55 percent, on turnover of 195.86 billion Hong Kong dollars. Its technology index fell 3 percent to 3,813, and the China Enterprises Index fell 1.5 percent to 7,937, Radio Television Hong Kong reported. The Shanghai Composite closed at 3,634.36, down 21.47 points, or 0.59 percent. The Shenzhen Component Index fell 2.05 percent to 10,968, and the ChiNext index fell 3.32 percent to 2,426. Yonhap said Zhipu AI fell more than 11 percent and MiniMax more than 8 percent on concern about access to advanced chips, and that Innolight and Eoptolink each fell more than 8 percent. Around the Tokyo close, Yonhap’s rate screen had Japan’s 10-year government yield up 7.29 basis points at 2.8656 percent, and the 30-year up 8.49 basis points at 4.0066 percent. That is a screen around the close, as Yonhap described it. The morning yuan fixing was 6.7152 per dollar, which Yonhap said was a slightly stronger yuan.</p>
+    <p>Oil settled almost where Thursday left it, and still down on the week. Brent futures settled at $95.84 a barrel, up 2 cents, or 0.02 percent. West Texas Intermediate finished at $88.56, down 18 cents, or 0.20 percent. Reuters said both declined for a second straight week, and attributed the quiet session to Washington’s focus on blockading Iran and on other economic pressure, which it said had eased fears of a renewed direct clash in the Iran war. That is the wire’s framing of the backdrop.</p>
+    <p>Gold steadied after Thursday’s drop and kept a bad week. December gold futures settled largely unchanged at $3,886.30 an ounce. Spot gold was up 0.1 percent at $3,879.71 as of 2:05 p.m. Eastern, after a session high of $3,922.97 when the producer-price figures came out. Reuters said bullion had shed about 4.5 percent on the week and was set for its worst week since early June. At that same 2:05 p.m. snapshot, spot silver was down 1.9 percent at $49.05. In the currency story, bitcoin was down 4.22 percent at $68,467.26 and ether was down 4.02 percent at $1,934.86.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Long-term ETF lens</h2>
+  <div class="card">
+    <p>VWRA is the accumulating share class of Vanguard’s FTSE All-World UCITS ETF, ISIN IE00BK5BQT80, listed in francs on SIX. It does not distribute income. Vanguard’s ongoing charges figure, also called the total expense ratio, is 0.14 percent. The fund physically samples the FTSE All-World Index. As of 30 September 2026 it held 3,821 stocks against 4,203 in the index, with a price/earnings ratio of 20.7 times, the same as the benchmark. Those portfolio figures are six weeks old. The page read this morning still shows share-class assets of $62.19 billion. Outstanding shares were 329,991,065 as of 31 October 2026.</p>
+    <p>Country weights on 30 September: United States 62.24 percent, Japan 6.06 percent, Taiwan 3.54 percent, United Kingdom 3.12 percent, Switzerland 1.88 percent. The largest holding was Nvidia at 5.01 percent of fund market value, then Apple at 4.52 percent and Microsoft at 3.58 percent. Broadcom was 1.54 percent. Friday’s semiconductor selloff hits the top holding and another large technology weight, inside a fund that owns several thousand companies. Using the 30 September weight of 5.01 percent, a 2 percent decline in that holding is about 0.10 percentage point of the fund, before any other holding moves. The fund move is the net of all of them: the dollar net asset value fell 0.36 percent.</p>
+    <p>Friday’s dollar net asset value was $187.9772, shown on the page as $187.98, down $0.68, or 0.36 percent. The franc market price fell 1.02 francs, or 0.64 percent, to 157.16. Dividing Friday’s franc price by Friday’s net asset value gives about 0.8361 francs per dollar. Thursday’s pair gives about 0.8384. Those quotients are arithmetic on Vanguard’s prints. They are a market price divided by a net asset value, and they are different from the later New York dollar-franc quotes of 0.839 and 0.8394, which were published after the 17:30 Zurich close. Over a long holding period the franc price follows world equities and the franc’s exchange rate together. A higher Federal Reserve path raises the discount rate on a 20.7 times portfolio. A firmer dollar, if it persists into the Swiss session, cushions the franc quote on a day when the dollar net asset value falls. Friday’s SIX print recorded the equity decline. The evening currency prints came later.</p>
+    <p>The 52-week market-value high on Vanguard’s page is 162.38 francs and the low is 129.36 francs, both stamped 14 November. Vanguard states the 52-week difference as 33.02 francs, or +20.34 percent. Friday’s close is 5.22 francs under that high, 3.2 percent using the high as the base, and 27.80 francs above that low, 21.5 percent using the low as the base. Those two comparisons are arithmetic on Vanguard’s printed high, low and close. They are separate from Vanguard’s +20.34 percent figure. The dollar net-asset-value range on the same page is a high of $195.62 and a low of $161.35, a difference of $34.27, or +17.52 percent.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Hottest tactical</h2>
+  <div class="card">
+    <p>Thursday’s relative winners were Friday’s losers. Advanced Micro Devices and Broadcom, which had risen with the first reaction to Nvidia’s leadership break, fell 8.8 percent and 4.8 percent. Nvidia itself lost another 2 percent and stretched its weekly losing streak to six. Europe, with less of the index in that trade, banked the strongest Euro Stoxx 50 week since April and a 2.1 percent week for the Swiss Market Index, then paused on Friday, with Nestlé and the insurers doing more of the holding than the chip names. Reuters also pointed to Anthropic’s planned stock-market listing next week as a test of appetite for a new artificial-intelligence name. For a fund that already owns Nvidia, Broadcom, the oil majors and the Swiss defensives at index weight, the tactical version of Friday is a bet that this rotation keeps going for days or weeks. The listing, if it happens on the timetable Reuters described, is a sentiment event for that trade. It is a trading view on top of a holding that will add a new company only when the index does.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Biggest risk</h2>
+  <div class="card">
+    <p>The risk that reaches the whole fund is the discount rate. Producer prices rose less on the month than the Reuters poll, and 6.5 percent on the year, the largest 12-month rise since November 2022. The measure excluding foods, energy and trade services rose 0.5 percent for a second month. Closing stories still treated a December hike of at least 25 basis points as priced, with a live tail of a 50-basis-point move that different FedWatch snapshots put between 8.6 and 11 percent through Friday afternoon. The 10-year yield’s 3 p.m. close was 5.152 percent, up 0.294 percentage point on the week, the largest weekly rise since 11 April 2025 on Dow Jones’s telling. The dollar index was at its highest since April 2025. Gold’s roughly 4.5 percent weekly drop is the same story from the other side of the rate market. The next official cluster is retail sales, industrial production and housing next week, then the personal-consumption-expenditures deflator on 25 November, and the Federal Reserve meeting on 8–9 December.</p>
+    <p>The second risk is narrower and already inside the largest holding. Nvidia reports on Tuesday after the United States closing bell. The Financial Times reported that the board has approached Arm Holdings chief executive Rene Haas as a possible successor to Jensen Huang. Reuters reported that Huang stepped down after revelations of extramarital affairs, including a relationship with a businesswoman whom United States authorities suspect of spying for China. The suspicion is an allegation in that reporting. Yonhap Infomax described Colette Kress, the chief financial officer, as interim chief executive, and quoted Daiwa Securities calling that a source of relief in Tokyo. A difficult combination for this fund would be a discount rate that keeps rising and a messy Nvidia report, because one hits the multiple on a 20.7 times portfolio and the other hits a 5 percent position. The ground stop in United States aviation was a real Friday event. It is a smaller part of a global equity fund than the rate path or the top holding.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Calendar</h2>
+  <div class="card">
+    <p>Times in Central European Time, with United States Eastern Time in parentheses. Eastern Time is six hours behind Zurich in November. Friday’s producer-price index has been released. Entries below are still ahead.</p>
+    <table>
+      <thead>
+        <tr><th>When</th><th>What</th><th>Source</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mon 16 Nov, 14:30 (08:30)</td>
+          <td>Empire State Manufacturing Survey. The New York Fed’s credit-access survey is at 17:00 (11:00).</td>
+          <td>Federal Reserve Bank of New York calendar</td>
+        </tr>
+        <tr>
+          <td>Tue 17 Nov, 14:30 (08:30)</td>
+          <td>Advance retail sales, import and export price indexes, and the Business Leaders Survey. Industrial production and capacity use at 15:15 (09:15). Business inventories and the Survey of Professional Forecasters at 16:00 (10:00). Nvidia reports after the United States closing bell. Reuters says Anthropic’s listing is expected next week, with no date in that story.</td>
+          <td>New York Fed calendar; Reuters</td>
+        </tr>
+        <tr>
+          <td>Wed 18 Nov, 14:30 (08:30)</td>
+          <td>New residential construction. Pending home sales at 16:00 (10:00).</td>
+          <td>New York Fed calendar</td>
+        </tr>
+        <tr>
+          <td>Thu 19 Nov, 14:30 (08:30)</td>
+          <td>Initial jobless claims and the Philadelphia Fed manufacturing survey.</td>
+          <td>New York Fed calendar</td>
+        </tr>
+        <tr>
+          <td>Fri 20 Nov, 16:00 (10:00)</td>
+          <td>University of Michigan consumer survey, final.</td>
+          <td>New York Fed calendar</td>
+        </tr>
+        <tr>
+          <td>Wed 25 Nov, 14:30 (08:30)</td>
+          <td>Second release of gross domestic product, personal income and the personal consumption expenditures deflator, and advance durable goods. The deflator is the Federal Reserve’s preferred inflation gauge. The New York Fed calendar lists no release on Thursday 26 November.</td>
+          <td>New York Fed calendar</td>
+        </tr>
+        <tr>
+          <td>Tue 8 and Wed 9 Dec</td>
+          <td>Federal Reserve meeting. Friday’s closing Reuters story is the source for these dates. No clock time was in that story.</td>
+          <td>Reuters, citing the CME FedWatch horizon</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>VWRA in Swiss francs</h2>
+  <div class="card">
+    <p><span class="pill">Alerts 140 and 135: not triggered</span></p>
+    <p>Friday’s SIX close, 157.16 francs, is Vanguard’s market value “at closure 13 Nov 2026”. It is 17.16 francs above 140, which is 10.9 percent of the current price, and 22.16 francs above 135, which is 14.1 percent of the current price. Markets are closed today. The next franc price prints on Monday after 09:00 Zurich.</p>
+    <p>The sparkline uses the ten franc closes Vanguard publishes on the product page, from 2 November through 13 November. The vertical scale runs from 132 to 166 so the alert lines and the 52-week high of 162.38 can sit on the same drawing. Recent wiggles look small because the alerts are far below the price. That is the point of the scale.</p>
+    <svg class="spark" viewBox="0 0 700 188" role="img" aria-label="VWRA closing prices in Swiss francs from 2 November to 13 November 2026, with alert lines at 140 and 135 and the 52-week high at 162.38.">
+      <rect x="0" y="0" width="700" height="188" fill="#fbf9f4"></rect>
+      <line x1="48" y1="32.3" x2="648" y2="32.3" stroke="#8a5a12" stroke-dasharray="2 4" stroke-width="1"></line>
+      <line x1="48" y1="120.5" x2="648" y2="120.5" stroke="#8e2f2a" stroke-dasharray="4 3" stroke-width="1"></line>
+      <line x1="48" y1="140.2" x2="648" y2="140.2" stroke="#8e2f2a" stroke-width="1"></line>
+      <polygon points="48.0,60.0 114.7,63.7 181.3,58.2 248.0,74.0 314.7,74.8 381.3,65.1 448.0,63.3 514.7,49.9 581.3,48.9 648.0,52.9 648.0,120.5 48.0,120.5" fill="#1f6b45" opacity="0.12"></polygon>
+      <polyline points="48.0,60.0 114.7,63.7 181.3,58.2 248.0,74.0 314.7,74.8 381.3,65.1 448.0,63.3 514.7,49.9 581.3,48.9 648.0,52.9" fill="none" stroke="#1c1915" stroke-width="2.25" stroke-linejoin="round" stroke-linecap="round"></polyline>
+      <circle cx="648.0" cy="52.9" r="3.5" fill="#1c1915"></circle>
+      <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#5c564c">
+        <text x="40" y="36" text-anchor="end">162.38 high</text>
+        <text x="40" y="56" text-anchor="end">157.16</text>
+        <text x="40" y="124" text-anchor="end">140</text>
+        <text x="40" y="144" text-anchor="end">135</text>
+        <text x="48" y="172">2 Nov</text>
+        <text x="314.7" y="172" text-anchor="middle">6 Nov</text>
+        <text x="648" y="172" text-anchor="end">13 Nov</text>
+      </g>
+    </svg>
+    <table>
+      <thead>
+        <tr><th>Date</th><th class="r">SIX close, CHF</th><th class="r">Net asset value, USD</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>13 Nov 2026</td><td class="r">157.16</td><td class="r">187.9772</td></tr>
+        <tr><td>12 Nov 2026</td><td class="r">158.18</td><td class="r">188.6596</td></tr>
+        <tr><td>11 Nov 2026</td><td class="r">157.92</td><td class="r">189.4469</td></tr>
+        <tr><td>10 Nov 2026</td><td class="r">154.52</td><td class="r">187.4157</td></tr>
+        <tr><td>9 Nov 2026</td><td class="r">154.06</td><td class="r">187.3770</td></tr>
+        <tr><td>6 Nov 2026</td><td class="r">151.60</td><td class="r">183.4672</td></tr>
+        <tr><td>5 Nov 2026</td><td class="r">151.80</td><td class="r">184.8510</td></tr>
+        <tr><td>4 Nov 2026</td><td class="r">155.82</td><td class="r">190.3616</td></tr>
+        <tr><td>3 Nov 2026</td><td class="r">154.40</td><td class="r">187.7921</td></tr>
+        <tr><td>2 Nov 2026</td><td class="r">155.34</td><td class="r">187.9759</td></tr>
+      </tbody>
+    </table>
+    <p class="note">Source of every figure in the table and the sparkline: Vanguard Switzerland private-investor page for the USD accumulating share class, read on the morning of 14 November 2026. The page header rounds the latest net asset value to $187.98 and the latest franc price to 157.16. Alert distances, the 3.2 percent gap to the 52-week high, and the franc-per-dollar quotients are calculated from those prints and are separate from any Vanguard statistic.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Fact versus speculation</h2>
+  <div class="split">
+    <div class="fact">
+      <h3>Reported as fact</h3>
+      <ul>
+        <li>Index closes, the Tradeweb 3 p.m. 10-year yield, the currency prints, and the commodity settles named above, each tied to the dispatch in Sources. Where two readable lasts differ, both are printed.</li>
+        <li>The Bureau of Labor Statistics said October final-demand producer prices rose 0.3 percent on the month and 6.5 percent on the year. Goods rose 0.5 percent, services 0.2 percent, and the ex-food, energy and trade index 0.5 percent on the month and 4.9 percent on the year.</li>
+        <li>Reuters said Nvidia shares fell 2 percent and that Jensen Huang resigned on Thursday. The Financial Times report of an approach to Rene Haas is identified as the Financial Times’ report. Yonhap Infomax described Colette Kress as interim chief executive.</li>
+        <li>The Federal Aviation Administration’s ground stop, the airline index close of minus 1.4 percent, and the Microsoft outage with no recovery timeline are in Friday’s Reuters copy.</li>
+        <li>VWRA’s franc close, dollar net asset value, charges, holdings and 52-week marks are Vanguard’s figures, with the holdings date stated as 30 September 2026.</li>
+        <li>Asian cash levels are Friday closes from Yonhap Infomax and Radio Television Hong Kong. They are finished sessions.</li>
+      </ul>
+    </div>
+    <div class="spec">
+      <h3>Allegation, claim, or forecast</h3>
+      <ul>
+        <li>The suspicion that a businesswoman linked to Huang in the Reuters account was spying for China is an allegation in that reporting. This briefing leaves it there.</li>
+        <li>The Financial Times report that Nvidia’s board approached Arm’s Rene Haas is a report about a search. Friday’s Reuters stories did not present it as a company announcement.</li>
+        <li>Reuters’ description of a US focus on blockading Iran, and of an Iran war as the backdrop for oil, is the wire’s framing. It is attributed.</li>
+        <li>Any path for a 50-basis-point hike, for hikes at the next three meetings, for intervention near 160 yen, and for Anthropic listing next week, is a market, official or press expectation. The four FedWatch readings are snapshots, and they are different.</li>
+        <li>Robert Greil of Merck Finck, RBC on Aviva and Richemont, and Daiwa on the interim chief executive are named views inside the wires that quoted them.</li>
+        <li>An earlier pass of the Reuters equity story, seen before the page was updated to the close, carried different lasts for the dollar index, the euro and the 2-year yield. The page now shows the closing figures used above. The superseded lasts are omitted.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Sources</h2>
+  <ol class="src">
+    <li>Reuters, Caroline Valetkevitch and Elizabeth Howcroft, 13 November 2026, via Euronext: <a href="https://live.euronext.com/en/financial-news/stocks-mostly-ease-tech-nvidia-concerns-airline-shares-fall-late-session">Stocks mostly ease with tech, Nvidia concerns; airline shares fall late in session</a>.</li>
+    <li>Reuters, Chuck Mikolajczak and Niket Nishant, 13 November 2026, via Financial Newsletter: <a href="https://financialnewsletter.com/sp-500-nasdaq-end-25/">S&amp;P 500, Nasdaq end lower as Nvidia uncertainty weighs on tech shares</a>.</li>
+    <li>Reuters, Chibuike Oguh and Javi West Larrañaga, 13 November 2026, 4:52 p.m. Eastern, via Yahoo Finance: <a href="https://finance.yahoo.com/markets/currencies/articles/dollar-near-19-month-high-020101127.html">Dollar set for best week in two months, yen weakens toward 160</a>.</li>
+    <li>Reuters, Lucia Mutikani, 13 November 2026, via Yahoo Finance: <a href="https://ca.finance.yahoo.com/news/us-producer-prices-rise-further-134603348.html">US producer prices rise further in October</a>.</li>
+    <li>Reuters, Anjana Anil, 13 November 2026, via MarketScreener: <a href="https://ca.marketscreener.com/news/rate-hike-bets-keep-gold-on-track-for-its-worst-week-in-four-months-ce785ed9d18ff523">Rate-hike bets keep gold on track for worst week in four months</a>.</li>
+    <li>Dow Jones Newswires, 13 November 2026, 8:54 p.m., via Morningstar, source Tradeweb FTSE US Treasury Closing Prices, 3 p.m. Eastern: <a href="https://www.morningstar.com/news/dow-jones/202611139683/10-year-treasury-yield-rises-to-5152-this-week-data-talk">10-year Treasury yield rises to 5.152 percent this week</a>.</li>
+    <li>Bureau of Labor Statistics, Producer Price Indexes, October 2026, released 13 November 2026: <a href="https://www.bls.gov/news.release/ppi.nr0.htm">news release summary</a>.</li>
+    <li>AWP, 13 November 2026, via MarketScreener: <a href="https://ch.marketscreener.com/boerse-nachrichten/aktien-schweiz-schluss-leichte-verluste-zum-ausklang-einer-erneut-starken-woche-ce785ed9d08cf32d">Aktien Schweiz Schluss</a>.</li>
+    <li>AWP, 13 November 2026, via cash.ch: <a href="https://www.cash.ch/news/aktien-europa-schluss-aufwartsdrang-erlahmt-nach-starker-borsenwoche-985207">Aktien Europa Schluss</a> and <a href="https://www.cash.ch/news/devisen-dollar-beendet-starke-woche-mit-weiteren-gewinnen-985232">Devisen: Dollar beendet starke Woche mit weiteren Gewinnen</a>.</li>
+    <li>Yonhap Infomax, Park Ji-eun, 13 November 2026: <a href="https://en.infomaxai.com/news/articleView.html?idxno=148534">Asian markets mixed as Japan and Taiwan rise while China and Hong Kong fall</a>.</li>
+    <li>Radio Television Hong Kong, 13 November 2026, 17:16 Hong Kong time: <a href="https://news.rthk.hk/rthk/en/component/k2/1877702-20261113.htm">Tech fallout weighs on HK, mainland markets</a>.</li>
+    <li>Vanguard Switzerland, FTSE All-World UCITS ETF (USD) Accumulating: <a href="https://www.ch.vanguard/en/private-investor/product/etf/equity/9679/ftse-all-world-ucits-etf-usd-accumulating">product page</a>.</li>
+    <li>Federal Reserve Bank of New York: <a href="https://www.newyorkfed.org/research/calendars/i-nov26.html">economic indicators calendar, November 2026</a>.</li>
+  </ol>
+</section>
+
+<footer class="disc">
+  <p>This page is a market briefing for a long-term holder of a broad global equity exchange-traded fund. It is not investment advice, not a solicitation, and not a personal recommendation to buy, sell, or hold any security, including VWRA. Prices, yields and probabilities move, and two wires can print two lasts for the same afternoon. Check Vanguard, the exchange, and the original dispatches before relying on a figure. Past performance is not a guide to future results.</p>
+</footer>
+</body>
+</html>
