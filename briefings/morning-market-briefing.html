@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morning Market Briefing — 21 November 2026</title>
+<style>
+  :root {
+    --ink: #1b1914;
+    --muted: #5c564c;
+    --paper: #f6f1e7;
+    --card: #fffdf8;
+    --line: #e2d8c8;
+    --down: #9c2432;
+    --up: #1d6b45;
+    --gold: #8a6232;
+    --alert: #8a3b12;
+    --chip: #efe6d6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 17px/1.55 "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  }
+  main { max-width: 920px; margin: 0 auto; padding: 32px 20px 64px; }
+  header.mast {
+    border-top: 4px solid var(--ink);
+    padding-top: 18px;
+    margin-bottom: 22px;
+  }
+  .kicker {
+    font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--gold);
+    margin: 0 0 8px;
+  }
+  h1 { font-size: 34px; line-height: 1.15; font-weight: 600; margin: 0 0 8px; }
+  .meta { color: var(--muted); font-size: 15px; margin: 0; }
+  .lede {
+    font-size: 20px;
+    line-height: 1.45;
+    margin: 18px 0 22px;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 0 0 28px;
+  }
+  .stat {
+    background: var(--card);
+    border: 1px solid var(--line);
+    padding: 12px 12px 10px;
+  }
+  .stat .lbl {
+    font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .stat .val { font-size: 22px; font-weight: 600; margin-top: 2px; }
+  .stat .sub { font-size: 13px; color: var(--muted); }
+  .down { color: var(--down); }
+  .up { color: var(--up); }
+  h2 {
+    font-size: 22px;
+    margin: 32px 0 8px;
+    padding-top: 8px;
+    border-top: 1px solid var(--ink);
+  }
+  h3 { font-size: 17px; margin: 18px 0 6px; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 1.2em; }
+  li { margin: 0 0 6px; }
+  .note {
+    background: var(--chip);
+    border-left: 3px solid var(--gold);
+    padding: 10px 12px;
+    font-size: 15px;
+    margin: 0 0 14px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card);
+    font-size: 15px;
+    margin: 0 0 14px;
+  }
+  th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th {
+    font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    padding: 12px 14px;
+  }
+  .card h3 { margin-top: 0; }
+  svg.spark { width: 100%; height: auto; display: block; background: var(--card); border: 1px solid var(--line); }
+  .caption { color: var(--muted); font-size: 14px; margin-top: 6px; }
+  a { color: #1e4d8c; }
+  .src { font-size: 15px; }
+  .src li { margin-bottom: 8px; }
+  footer {
+    margin-top: 28px;
+    padding-top: 12px;
+    border-top: 1px solid var(--ink);
+    color: var(--muted);
+    font-size: 14px;
+  }
+  @media (max-width: 720px) {
+    .stats, .split { grid-template-columns: 1fr 1fr; }
+    h1 { font-size: 28px; }
+  }
+  @media (max-width: 480px) {
+    .stats { grid-template-columns: 1fr; }
+  }
+  @media print {
+    body { background: white; }
+    .stat, .card, table, svg.spark { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="mast">
+    <p class="kicker">Morning Market Briefing · Swiss long-term holder</p>
+    <h1>Saturday 21 November 2026</h1>
+    <p class="meta">07:30 Europe/Zurich (central European time, UTC+1). Cash markets are shut today and Sunday. The session in hand is Friday 20 November. Figures below are closing prints unless a clock is named. Where two wires disagree, both are shown and nothing is averaged.</p>
+  </header>
+
+  <p class="lede">Friday extended the artificial-intelligence selloff: the Nasdaq Composite fell 5.28% to 22,617.73, the Swiss Market Index closed at 14,572.14, and the accumulating Vanguard FTSE All-World exchange-traded fund finished at 146.88 Swiss francs on SIX, still above the 140 and 135 franc alerts.</p>
+
+  <section class="stats" aria-label="Key closes">
+    <div class="stat">
+      <div class="lbl">S&amp;P 500</div>
+      <div class="val down">6,910.39</div>
+      <div class="sub">−265.44 · −3.70%</div>
+    </div>
+    <div class="stat">
+      <div class="lbl">Nasdaq Composite</div>
+      <div class="val down">22,617.73</div>
+      <div class="sub">−1,261.47 · −5.28%</div>
+    </div>
+    <div class="stat">
+      <div class="lbl">SMI</div>
+      <div class="val down">14,572.14</div>
+      <div class="sub">−1.02% · week −3.5%</div>
+    </div>
+    <div class="stat">
+      <div class="lbl">VWRA in francs</div>
+      <div class="val down">146.88</div>
+      <div class="sub">−5.74 · −3.76% · alerts intact</div>
+    </div>
+    <div class="stat">
+      <div class="lbl">US 10-year</div>
+      <div class="val down">4.948%</div>
+      <div class="sub">−10.43 bp in the Reuters wrap</div>
+    </div>
+    <div class="stat">
+      <div class="lbl">Dollar / franc</div>
+      <div class="val">0.8387</div>
+      <div class="sub">AWP 21:24 Zurich, before the New York close</div>
+    </div>
+    <div class="stat">
+      <div class="lbl">Brent settle</div>
+      <div class="val up">$92.57</div>
+      <div class="sub">+$0.59 · +0.64%</div>
+    </div>
+    <div class="stat">
+      <div class="lbl">Spot gold</div>
+      <div class="val down">$3,520.09</div>
+      <div class="sub">−2.81% · 14-month low</div>
+    </div>
+  </section>
+
+  <h2>Americas</h2>
+  <p>The Reuters closing file carried by Boursorama at 22:58 Paris time, and the same three lasts in the Reuters global wrap by Rodrigo Campos, agree: the Dow Jones Industrial Average fell 949.73 points, or 1.93%, to 48,147.33; the Standard &amp; Poor’s 500 fell 265.44 points, or 3.70%, to 6,910.39; the Nasdaq Composite fell 1,261.47 points, or 5.28%, to 22,617.73. CNBC’s note updated at 6:46 p.m. Eastern has the same three closes. The Campos page still shows a byline of 20 November, 1:46 a.m. UTC, marked updated. That clock is not the close. The index levels in the body match the 22:58 file, so the cross-asset figures in that wrap are used below as the post-close set.</p>
+  <p>CNBC said the Standard &amp; Poor’s 500 and the Dow had both moved 10% below their closing records and entered correction territory, and that the Nasdaq Composite was down 2.7% for 2026, erasing its gain for the year. It also said the Nasdaq-100 fell 5.6% and traded in bear-market territory during the session, 20% under its recent high. That bear-market condition was described as intraday.</p>
+  <p>For the week, CNBC reported the Dow down 8%, its worst week since March 2020; the Nasdaq down about 10%, its largest one-week pullback in more than six years; and the Standard &amp; Poor’s 500 down 8.6%, its worst week since April 2025. The Reuters close file put the Standard &amp; Poor’s 500 and the Dow’s largest weekly drop since April 2025, and the Nasdaq’s largest losses since March 2020. The two wires agree on the Standard &amp; Poor’s comparison and disagree on whether the Dow’s week was the worst since March 2020 or since April 2025. Both lines are left as printed.</p>
+  <p>Campos: MSCI’s all-country world gauge fell 34.89 points, or 3.30%, to 1,021.91, and its 8.1% weekly decline was the largest since early 2020. The Philadelphia semiconductor index fell 10.7% on the day and 17.1% on the week. Consumer staples was the only Standard &amp; Poor’s 500 sector to finish higher. The Cboe Volatility Index closed at its highest since April 2025. That story did not print a closing level. An earlier CNBC item had the index as high as 32.27 during the day; that is not used as the close.</p>
+  <p>Nvidia fell 13.8% on the day in the Reuters close file. CNBC said “around 14%,” and that the shares had their longest weekly losing streak since the 2008 financial crisis. No closing share price was in the Reuters close file, so none is printed here. Advanced Micro Devices fell more than 13% and Micron almost 14%, both CNBC, with no last prices in that passage. Amazon was among the large declines in the French-language Reuters close; a second name in that sentence was missing from the copy, so it is omitted.</p>
+  <div class="note">Treasury clocks differ. In the Campos wrap the 10-year yield fell 10.43 basis points to 4.948%, the largest daily drop since 22 October; the 2-year fell 13.21 basis points to 4.647%; the 30-year fell 6.81 basis points to 5.3329%. A hike is still priced for next month’s Federal Reserve meeting, the same story said. An earlier CNBC item, filed ahead of a speech by Governor Christopher Waller, had the 10-year down 6 basis points at 4.989%, the 2-year down 6 basis points at 4.713%, and the 30-year down 4 basis points at 5.361%. No 3 p.m. Tradeweb close was found this morning. The two sets are not averaged.</div>
+  <p>In that same wrap the dollar index was little changed after touching a 19-month high on Thursday. It fell 0.05% to 103.90. The euro was down 0.05% at $1.0961. The dollar weakened 0.67% to 158.6 yen. A separate AWP dispatch, from the Swiss financial news wire, timestamped 21:24 in Zurich — 15:24 in New York, before the equity close — had the euro at $1.0970 after $1.0993 late in the afternoon. Those euro prints are not averaged.</p>
+  <p>The University of Michigan’s Friday survey, as reported by CNBC, put the headline sentiment index at 51.5, up 7.3% from a month earlier and in line with the Dow Jones consensus CNBC cited. One-year inflation expectations fell to 3.7%, a full percentage point below a month earlier and under the mid-month November reading of 4.3%, the lowest since March. The five-year expectation slipped to 3.3%.</p>
+  <p>CNBC, quoting Governor Lisa Cook in Chile: inflation has been above target for more than five and a half years, and waiting longer “risks getting behind the curve.” CNBC said markets strongly expect a quarter-point increase at the 8–9 December meeting. No fresh CME FedWatch percentage was in the Reuters or CNBC copies read this morning. AWP said the trade is counting on an increase of at least 25 basis points, and that some economists expect 50. That 50-basis-point line is expectation, not a priced probability.</p>
+
+  <h2>Europe and Switzerland</h2>
+  <p>Dow Jones Market Data, via Morningstar, at 5:30 p.m. on 20 November: the STOXX Europe 600 closed at 625.65, down 12.76 points, or 2.00%, a fifth straight loss and the largest one-day drop since 19 March 2026. The week was −38.49 points, or −5.80%, the largest weekly drop since the week ending 4 April 2025, and the lowest close since 8 October 2026. The index is 5.80% under its record close of 664.14, set on Friday 13 November. Campos also had the STOXX Europe 600 down 2%, without a level.</p>
+  <table>
+    <thead>
+      <tr><th>Index</th><th class="num">Close</th><th class="num">Day</th><th class="num">Week</th><th>Source</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>STOXX Europe 600</td><td class="num">625.65</td><td class="num down">−2.00%</td><td class="num down">−5.80%</td><td>Dow Jones</td></tr>
+      <tr><td>FTSE 100</td><td class="num">10,346.34</td><td class="num down">−106.34 · −1.02%</td><td class="num down">−5.10%</td><td>Dow Jones</td></tr>
+      <tr><td>DAX</td><td class="num">24,802.78</td><td class="num down">−661.03 · −2.60%</td><td class="num down">−7.28%</td><td>Dow Jones</td></tr>
+      <tr><td>CAC 40</td><td class="num">7,927.75</td><td class="num down">−152.99 · −1.89%</td><td class="num down">−5.27%</td><td>Dow Jones</td></tr>
+      <tr><td>SMI</td><td class="num">14,572.14</td><td class="num down">−1.02%</td><td class="num down">−3.5%</td><td>AWP</td></tr>
+    </tbody>
+  </table>
+  <p>The DAX (Deutscher Aktienindex) fell for a sixth straight session and is 7.36% under its record close of 26,771.88 on 12 November, Dow Jones said. The CAC 40 in Paris is 9.15% under its record close of 8,726.03 on 10 August. The FTSE 100 (Financial Times Stock Exchange 100) had its largest weekly drop since the week ending 6 March 2026. AWP’s Swiss close rounded Frankfurt to −2.5% and Paris to −1.7% and did not give levels. Those rounded lines are looser than the Dow Jones cash prints and are not used as the closes.</p>
+  <p>AWP at 18:16 Zurich: the Swiss Market Index fell 1.02% to 14,572.14, a few points above the day’s low, and back under 14,600 for the first time in nearly a month. The week was a minus of 3.5%. The board beside that story showed −3.53% over five sessions. AWP said the index set an all-time high at 15,272 points on Monday. The SMI Mid index fell 1.26% to 3,156.90. The Swiss Performance Index fell 1.13% to 20,494.43. The Swiss exchange’s fear gauge, the VSMI, rose by a double-digit percentage. AWP did not print the level. A cash.ch ticker at 17:35 had the SMI at 14,567, about −1.05%, and a weekly loss of around 2.5%. The AWP close story is the figure used here.</p>
+  <p>Inside the Swiss Market Index, AWP had the largest damage in industrial and financial names: ABB −4.2% and VAT Group −5.7%, each down about 7% on the week; UBS −3.8%, Julius Baer −3.9%, Partners Group −3.6%, Richemont −4.6%, Logitech −3.5%, and Lonza and Sika each −2.4%. Nestlé rose 1.3%, Novartis 0.4% and Swiss Re 1.4%. Roche’s bearer share fell 0.6%. AWP said stricter capital rules weighed on UBS all week, and that the National Council’s economic-affairs and taxation committee will take up the bill in Bern next week. No sitting day was named.</p>
+  <p>The franc was bid as a haven in the AWP dispatch at 21:24. AWP is the Swiss financial news wire. The euro was at 0.9201 francs after 0.9227 late in the afternoon. The dollar was at 0.8387 francs after 0.8394 in the afternoon, back under 0.84. AWP quoted Commerzbank’s Thu Lan Nguyen on French public finances weighing on the euro even when rate expectations would otherwise help it. That is an opinion, recorded under speculation below. No later dollar/franc quote, after the New York equity close, was in the copies read this morning.</p>
+  <p>British retail sales volumes rose 0.7% in October, the Office for National Statistics said, against a flat reading in a Reuters poll cited by CNBC, after −0.6% in September. CNBC said money-market pricing on LSEG still points to a 25-basis-point Bank of England increase in December, with the odds near 80% against about 90% a week earlier.</p>
+
+  <h2>Asia and commodities</h2>
+  <p>Nikkei Indexes’ own daily file for Friday: the Nikkei 225 closed at 56,436.65, down 3,007.56 points, or 5.06%. The open was 58,551.56, the high 58,707.48 at 09:01, and the low was the close. Eleven constituents rose and 214 fell. The Nikkei newspaper’s closing story matches that last. RTHK put the week at −7.7%. CNBC had the Topix at 3,674.22, down 3.88%; RTHK rounded the same close to 3,674, down 148 points. RTHK’s single-stock closes included Advantest −10.32%, Tokyo Electron −7.06%, SoftBank Group −14.48% and Kioxia −11.66%. CNBC called SoftBank’s drop its worst day since August 2024.</p>
+  <p>Yonhap at 16:37 Seoul time: the Korea Composite Stock Price Index (Kospi) fell 267.93 points, or 5.21%, to 4,869.96. Program trading was suspended for five minutes around noon. Decliners beat gainers 805 to 88. Foreigners sold a net 1.13 trillion won and institutions 951.33 billion; individuals bought a net 1.59 trillion. Samsung Electronics fell 7.01% to 183,100 won and SK Hynix 5.92% to 1,113,000 won. The won was at 1,336.2 per dollar at 15:30, from 1,330 at the prior close. CNBC had the Kosdaq at 645.68, down 5.71%.</p>
+  <p>RTHK at 17:08 Hong Kong time, after the close: the Hang Seng Index ended at 22,410, down 430 points, or 1.9%, on turnover of 270.3 billion Hong Kong dollars. The tech index fell 3.8% to 3,511. The China enterprises index fell 1.8% to 7,554. The Shanghai Composite closed at 3,533, down 43 points, or 1.22%, on turnover of 702.57 billion yuan. The CSI 300 lost 0.8%. Both the Shanghai Composite and the CSI 300 posted their lowest closes since July 2025. On the week the Shanghai Composite fell 2.8%, its biggest weekly drop since July, and the CSI 300 lost 1.5%. The Shenzhen Component fell 3.09% to 10,256 and the ChiNext fell 3.54% to 2,212. A CNBC Asia note still had the Hang Seng down 2.24% in its final hour of trading, so that line is not a close. The same note had the CSI 300 at 3,954.57, down 0.76%. RTHK’s −0.8% and CNBC’s −0.76% are left side by side.</p>
+  <p>CNBC said the S&amp;P/ASX 200 closed at 8,592.6. The day change was not in that sentence.</p>
+  <div class="note">Taiwan, two clocks, not averaged. The Campos wrap, which carries the New York closes, said Taiwanese shares were down 17% on the week, the biggest weekly decline since 1990, and gave no Friday closing level. An earlier CNBC item, timestamped 11:27 p.m. Eastern on Thursday — about 12:27 in Taipei, before the 13:30 close — said the Taiex was down 5.65% on the day and 14.89% on the week, the steepest week since October 1997, citing LSEG. No closing Taiex level is printed in this note.</div>
+  <p>Oil settlements, not the running quote. Reuters (Erwin Seba, Houston), carried by Euronext with a 21:32 stamp, and matched by Xinhua: Brent settled at $92.57 a barrel, up 59 cents, or 0.64%. December West Texas Intermediate settled at $83.98, up 77 cents, or 0.93%. Seba said Brent was on track for a near 4% weekly decline and December West Texas Intermediate for about a 5% weekly drop, a third straight down week, with shipments through the Strait of Hormuz described as back near pre-war levels. The Campos wrap’s $83.67 and $92.61 are not the settlement.</p>
+  <p>The same Seba story reported two Thursday items as background, not as facts established by Reuters on its own: Iran’s Revolutionary Guards Navy said, via state media, that two tankers had hit naval mines in the Strait of Hormuz and were burning; and the Houthis fired missiles at Riyadh. On Friday the Houthis warned people near Saudi Red Sea ports to leave and told shipping to move vessels, saying they would target Jeddah and the Red Sea if a Saudi-led coalition struck Hodeidah. OPEC+ ministers meet on 29 November on 2027 output policy, Seba wrote.</p>
+  <p>Spot metals in the Campos wrap, not exchange settlements: gold fell 2.81% to $3,520.09 an ounce, a 14-month low, after the largest weekly drop in eight months. Silver fell 4.22% to $40.95. Copper fell 2.9% to $12,162.50 a tonne. An earlier CNBC item at 1:01 a.m. Eastern, using “on track,” had a Reuters spot of $3,520.05. That clock is before the New York day and is not used as the later figure.</p>
+
+  <h2>Long-term ETF lens</h2>
+  <p>VWRA is the accumulating share class of the Vanguard FTSE All-World UCITS (Undertakings for Collective Investment in Transferable Securities) exchange-traded fund, ISIN IE00BK5BQT80, priced in Swiss francs on SIX Swiss Exchange. It owns shares, it does not use a swap, and the ongoing charges figure is 0.14%. Vanguard’s page this morning showed 3,574 stocks against 4,199 in the FTSE All-World Index, a price/earnings ratio of 19.6 times, and a one-year tracking error of 0.07%, all as at 31 October. Share-class assets were $62.19 billion and total assets $88.84 billion.</p>
+  <p>The portfolio that matters for this account is not the Swiss Market Index. As at 31 October the fund was 62.83% United States, 5.94% Japan, 3.31% Taiwan, 2.25% South Korea and 2.08% Switzerland. The top holdings were Apple 4.74363%, Nvidia 4.54553% and Microsoft 3.69160%. Friday’s prices are not in that table. A 13.8% drop in Nvidia, a 5% drop in Seoul and Tokyo, and a 17% weekly figure for Taiwan — whichever of the two weekly clocks one uses — land in sleeves that were already a large part of the fund a month ago. Nestlé and Novartis rising in Zurich is the home market, not the fund.</p>
+  <p>From the two rows on Vanguard’s own history table, Friday 13 November to Friday 20 November, the franc market price went from 157.16 to 146.88, a decline of 10.28 francs, or 6.54%, and the net asset value went from $187.9772 to $172.9725, a decline of 7.98%. Those are arithmetic from the published rows, not a weekly statistic Vanguard printed. One week of that size does not change the reason to hold a single global equity fund. It does change the distance to the alerts the holder already set.</p>
+  <p>The Swiss close and the fund’s net asset value are different clocks. SIX stops at 17:30 in Zurich, which is 11:30 in New York. Vanguard stamps both the franc price and the dollar net asset value “at closure 20 Nov 2026.” The franc price fell 3.76% and the net asset value 3.27%. Part of any gap is the firmer franc — fewer francs per dollar — and part is that Zurich does not trade the last hours of Wall Street. This note does not try to split the two.</p>
+
+  <h2>Hottest tactical tape</h2>
+  <p>The tape traders were fighting on Friday was the round-trip in artificial intelligence, not a new macro print. Anthropic, ticker ANT, debuted on Thursday. Reuters (Campos) said that on Friday the shares fell as much as 14.5%, to just above the $83 initial-public-offering price, and ended down 9.1% at $88.30. CNBC’s story updated at 6:46 p.m. Eastern said Anthropic lost 8.5% and did not print a price. Agence France-Presse, in a Paris close story published at 18:38 — 12:38 in New York, so before the US cash close — said the shares were down 9.80% on the session and did not print a price. The only explicit price attached to the word “ended” is Reuters’ $88.30. The percentages are not averaged, and the AFP figure is not a New York close.</p>
+  <p>Around that print: Nvidia −13.8% (Reuters close file); the semiconductor index −10.7% on the day; Seoul and Tokyo each down more than 5%; consumer staples the only green Standard &amp; Poor’s sector, with CNBC citing gains of more than 1% for Walmart and about 1% for Costco, Johnson &amp; Johnson and Procter &amp; Gamble. Reuters reported, citing two people briefed on the matter, that Securities and Exchange Commission enforcement staff are looking at possible accounting issues at Nvidia. The agency declined to comment. Nvidia did not immediately respond. Reuters could not establish when the inquiry opened or which issues are in scope, and wrote that an investigation is not evidence of wrongdoing and that many close with no action. At the time of that story — the page shows 7:13 p.m. UTC, which is 2:13 p.m. in New York, not the close — the shares were down about 13% after having been down more than 6% before publication.</p>
+  <p>The same Reuters account calls Jensen Huang the ousted chief executive and Colette Kress the interim chief executive and former chief financial officer, speaking in that role on Tuesday’s earnings call. It says Huang admitted an affair in a statement on 8 November, and that China has denied Alice Huang is a spy. Those personal claims are allegations in a news story, not findings of this note. They mattered for the tape because Reuters tied them to the selling.</p>
+  <p>For this account the tactical fact is narrower. VWRA already owns the basket. Trading the day’s most violent names would be a second decision, on top of a fund that has already marked the move in its net asset value. Nothing in Friday’s closes requires a sale to stay with the stated alerts.</p>
+
+  <h2>Biggest risk</h2>
+  <p>The risk that reaches this fund is a Federal Reserve that is still expected to tighten, meeting an equity drawdown that Friday did not finish. The next policy meeting is 8–9 December. CNBC said a quarter-point increase is strongly expected. A half-point is what AWP said some economists look for, and what CNBC’s week-ahead piece treated as the fear that Wednesday’s inflation report could cool. October personal consumption expenditures, the Fed’s preferred price gauge, are due Wednesday 25 November at 8:30 a.m. Eastern, in a holiday-shortened week. Cook’s warning, as carried by CNBC, is that waiting could mean larger increases later.</p>
+  <p>The second risk is oil and the war, because it feeds that same inflation path. Friday’s settlement rose on renewed attack worries and pre-holiday buying, even though the week was still down and Hormuz flows were described as near pre-war levels. A mine claim carried by Iranian state media, and a Houthi threat to Saudi ports, are in the Reuters settlement story as statements, not as damage Reuters counted itself. Either one becoming a sustained interruption would sit on top of a portfolio that is equities only.</p>
+
+  <h2>Calendar</h2>
+  <p>Next week is Thanksgiving week in the United States. CNBC’s week-ahead calendar, times in the US Eastern zone: Monday 23 November, preliminary S&amp;P Global manufacturing and services surveys at 9:45 a.m.; Tuesday, consumer confidence at 10:00 a.m., with Dell, HP and Analog Devices among the earnings; Wednesday 8:30 a.m., the second reading of third-quarter gross domestic product, October durable goods, weekly claims brought forward, personal income, and the October personal consumption expenditures indexes; Thursday 26 November, the New York Stock Exchange is closed; Friday 27 November, an early close at 1:00 p.m. Eastern. Reuters’ Take Five, filed Friday morning, is the week-ahead piece used here: global business surveys on Monday, Australia’s October consumer price index on Wednesday, the Bank of Korea on Thursday, Tokyo consumer prices on Friday, and Black Friday as the consumer check.</p>
+  <table>
+    <thead>
+      <tr><th>When</th><th>What the wires actually said</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Monday 23 Nov</td><td>Flash purchasing-managers’ indexes worldwide (Reuters Take Five). US surveys at 9:45 a.m. Eastern (CNBC).</td></tr>
+      <tr><td>Tuesday 24 Nov</td><td>US consumer confidence, 10:00 a.m. Eastern. No Swiss data item was pinned to this day in the copies read.</td></tr>
+      <tr><td>Wednesday 25 Nov</td><td>US personal consumption expenditures, income, durable goods, claims and the second third-quarter GDP reading, 8:30 a.m. Eastern. Australian consumer prices (Reuters).</td></tr>
+      <tr><td>Thursday 26 Nov</td><td>New York closed for Thanksgiving. Bank of Korea decision. Reuters said expectations have shifted toward a 25-basis-point increase, to 3.25%. European Central Bank minutes were not in the Take Five copy read here.</td></tr>
+      <tr><td>Friday 27 Nov</td><td>New York closes at 1:00 p.m. Eastern. Tokyo consumer prices. Take Five said the October core reading was 2.6%. The deadline for two European Central Bank executive-board candidacies was moved to Friday, Take Five said.</td></tr>
+      <tr><td>Next week, day unnamed</td><td>Swiss National Council committee discussion of the UBS capital-rules bill (AWP).</td></tr>
+      <tr><td>Sunday 29 Nov</td><td>OPEC+ meetings on 2027 output (Reuters, Seba).</td></tr>
+      <tr><td>8–9 December</td><td>Federal Reserve meeting. Quarter-point strongly expected (CNBC). No new FedWatch percentage in the copies read.</td></tr>
+    </tbody>
+  </table>
+  <p>Reuters also noted the National Retail Federation’s forecast that US retail sales in November and December will rise 4.2% from the 2025 season, to $1.013 trillion. That is a forecast. October retail sales had already been reported as a solid increase, and Target and TJX gave upbeat holiday outlooks, Take Five said. CNBC quoted AAA: the national average for regular gasoline was $3.69 a gallon on Friday, from $3.72 on Thursday, about 59 cents above a year earlier.</p>
+
+  <h2>VWRA in Swiss francs</h2>
+  <p>Vanguard, at closure 20 November 2026: market price 146.88 francs, down 5.74 francs, or 3.76%. Net asset value $172.97 ($172.9725 on the history row), down $5.84, or 3.27%. The 52-week franc high and low are still 162.38 and 129.36. The 52-week net-asset-value high and low are still $195.62 and $161.35. The page stamp on those ranges now reads “at closure 21 Nov 2026.” The levels did not change. Alerts at 140 and 135 francs were not hit. The gap from 146.88 to 140 is 6.88 francs, about 4.7% of the latest price. The gap to 135 is 11.88 francs, about 8.1%.</p>
+  <svg class="spark" viewBox="0 0 680 210" role="img" aria-label="VWRA Swiss franc closes from 9 to 20 November 2026, with alert lines at 140 and 135 francs">
+    <title>VWRA in Swiss francs, 9–20 November 2026</title>
+    <rect x="0" y="0" width="680" height="210" fill="#fffdf8"/>
+    <line x1="48" y1="28.4" x2="664" y2="28.4" stroke="#c4b49a" stroke-dasharray="3 4"/>
+    <line x1="48" y1="134.2" x2="664" y2="134.2" stroke="#8a3b12" stroke-dasharray="5 4"/>
+    <line x1="48" y1="157.8" x2="664" y2="157.8" stroke="#8a3b12" stroke-dasharray="2 3"/>
+    <polyline fill="none" stroke="#9c2432" stroke-width="2.5"
+      points="48,67.7 116.4,65.5 184.9,49.5 253.3,48.2 321.8,53.1 390.2,57.2 458.7,74.0 527.1,72.4 595.6,74.5 664,101.7"/>
+    <circle cx="664" cy="101.7" r="4" fill="#9c2432"/>
+    <g font-family="Georgia, serif" font-size="11" fill="#5c564c">
+      <text x="4" y="32">162.38</text>
+      <text x="4" y="138">140</text>
+      <text x="4" y="161">135</text>
+      <text x="40" y="200">9 Nov</text>
+      <text x="300" y="200">13 Nov</text>
+      <text x="620" y="200">20 Nov</text>
+      <text x="520" y="24">52-week high</text>
+      <text x="560" y="128">alert 140</text>
+      <text x="560" y="172">alert 135</text>
+    </g>
+  </svg>
+  <p class="caption">Closes in francs from Vanguard’s history table, oldest to newest. The vertical scale runs from 132 to 165 so the alert lines sit on the chart. The 52-week low of 129.36 is below the frame. The last point is 146.88.</p>
+  <table>
+    <thead>
+      <tr><th>Date</th><th class="num">Franc price</th><th class="num">Net asset value, $</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>9 Nov</td><td class="num">154.06</td><td class="num">187.3770</td></tr>
+      <tr><td>10 Nov</td><td class="num">154.52</td><td class="num">187.4157</td></tr>
+      <tr><td>11 Nov</td><td class="num">157.92</td><td class="num">189.4469</td></tr>
+      <tr><td>12 Nov</td><td class="num">158.18</td><td class="num">188.6596</td></tr>
+      <tr><td>13 Nov</td><td class="num">157.16</td><td class="num">187.9772</td></tr>
+      <tr><td>16 Nov</td><td class="num">156.28</td><td class="num">184.7690</td></tr>
+      <tr><td>17 Nov</td><td class="num">152.74</td><td class="num">182.5667</td></tr>
+      <tr><td>18 Nov</td><td class="num">153.06</td><td class="num">181.7240</td></tr>
+      <tr><td>19 Nov</td><td class="num">152.62</td><td class="num">178.8118</td></tr>
+      <tr><td>20 Nov</td><td class="num">146.88</td><td class="num">172.9725</td></tr>
+    </tbody>
+  </table>
+  <p>Within this ten-session window, 146.88 is the lowest franc close. It is not a 52-week low. The published 52-week low remains 129.36.</p>
+
+  <h2>Fact and speculation</h2>
+  <div class="split">
+    <div class="card">
+      <h3>Printed as fact</h3>
+      <ul>
+        <li>The New York closes above, matched by the Reuters close file, the Campos wrap and CNBC.</li>
+        <li>Dow Jones cash levels for the STOXX Europe 600, FTSE 100, DAX and CAC 40.</li>
+        <li>AWP’s Swiss Market Index close of 14,572.14 and the 21:24 franc quotes.</li>
+        <li>Nikkei Indexes’ 56,436.65, Yonhap’s Kospi close, and RTHK’s Hong Kong and mainland closes.</li>
+        <li>Brent $92.57 and West Texas Intermediate $83.98 as settlements.</li>
+        <li>Vanguard’s 146.88 francs and $172.9725 net asset value. Alerts at 140 and 135 not hit.</li>
+        <li>Holdings, country weights and the price/earnings ratio are as at 31 October, not as at Friday.</li>
+        <li>Reuters: the SEC inquiry is described by two unnamed people; the agency declined to comment; Nvidia had not immediately responded; an inquiry is not proof of wrongdoing.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Opinion, forecast, or unverified</h3>
+      <ul>
+        <li>Any “worst week since” line where CNBC and Reuters disagree. Both are quoted above. Neither is chosen.</li>
+        <li>Anthropic’s day: Reuters says it ended at $88.30, down 9.1%. CNBC’s post-close story says −8.5% with no price. AFP’s −9.80% was in a Paris story filed at 18:38, before the New York close.</li>
+        <li>Taiwan’s week: −17% since 1990 in the post-close wrap, versus −14.89% since October 1997 in a pre-close CNBC note. No closing level used.</li>
+        <li>The Campos Treasury yields are not a labelled Tradeweb 3 p.m. close. The earlier CNBC yields were taken ahead of Waller’s speech.</li>
+        <li>A 50-basis-point December move is what some economists expect (AWP), not a percentage this note could re-read on FedWatch.</li>
+        <li>Mine and missile claims are statements Reuters attributed to the Revolutionary Guards, state media and the Houthis.</li>
+        <li>Huang’s exit and the affair are carried as Reuters reported them. They are not re-established from a company release this morning.</li>
+        <li>Retail-federation holiday spending, AAA’s possible further drop in gasoline, and any call that the selling “has further to run” are forecasts.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Sources</h2>
+  <ul class="src">
+    <li>Reuters global wrap, Rodrigo Campos, 20 November 2026 (page byline 1:46 a.m. UTC, marked updated; index levels match the close): <a href="https://www.reuters.com/5f374b32b07b/world/china/global-markets-global-markets-2026-11-20/">https://www.reuters.com/5f374b32b07b/world/china/global-markets-global-markets-2026-11-20/</a></li>
+    <li>Reuters New York close, via Boursorama, 20 November 2026, 22:58: <a href="https://www.boursorama.com/bourse/actualites/wall-street-termine-en-baisse-penalisee-par-l-ia-e1fac95bf5867dbe9b5ff0a202409874">https://www.boursorama.com/bourse/actualites/wall-street-termine-en-baisse-penalisee-par-l-ia-e1fac95bf5867dbe9b5ff0a202409874</a></li>
+    <li>CNBC, updated 6:46 p.m. Eastern, 20 November 2026: <a href="https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html">https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html</a></li>
+    <li>CNBC week ahead, 20 November 2026, 3:23 p.m. Eastern (calendar; written while Friday’s session was still open): <a href="https://www.cnbc.com/2026/11/20/stock-market-next-week-outlook-for-nov-23-27-2026.html">https://www.cnbc.com/2026/11/20/stock-market-next-week-outlook-for-nov-23-27-2026.html</a></li>
+    <li>Reuters on the SEC and Nvidia, Prentice and Alper, page time 7:13 p.m. UTC: <a href="https://www.reuters.com/5f374b32b07b/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/">https://www.reuters.com/5f374b32b07b/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/</a></li>
+    <li>Dow Jones via Morningstar — STOXX Europe 600: <a href="https://www.morningstar.com/news/dow-jones/202611206110/stoxx-europe-600-index-ends-the-week-580-lower-at-62565-data-talk">https://www.morningstar.com/news/dow-jones/202611206110/stoxx-europe-600-index-ends-the-week-580-lower-at-62565-data-talk</a></li>
+    <li>Dow Jones via Morningstar — FTSE 100: <a href="https://www.morningstar.com/news/dow-jones/202611206111/ftse-100-index-ends-the-week-510-lower-at-1034634-data-talk">https://www.morningstar.com/news/dow-jones/202611206111/ftse-100-index-ends-the-week-510-lower-at-1034634-data-talk</a></li>
+    <li>Dow Jones via Morningstar — DAX: <a href="https://www.morningstar.com/news/dow-jones/202611206112/dax-ends-the-week-728-lower-at-2480278-data-talk">https://www.morningstar.com/news/dow-jones/202611206112/dax-ends-the-week-728-lower-at-2480278-data-talk</a></li>
+    <li>Dow Jones via Morningstar — CAC 40: <a href="https://www.morningstar.com/news/dow-jones/202611206114/cac-40-index-ends-the-week-527-lower-at-792775-data-talk">https://www.morningstar.com/news/dow-jones/202611206114/cac-40-index-ends-the-week-527-lower-at-792775-data-talk</a></li>
+    <li>AWP Swiss close, via MarketScreener, 20 November 2026, 18:16: <a href="https://de.marketscreener.com/boerse-nachrichten/aktien-schweiz-schluss-mit-tech-und-zinssorgen-auf-talfahrt-ce785ed3dd88f62c">https://de.marketscreener.com/boerse-nachrichten/aktien-schweiz-schluss-mit-tech-und-zinssorgen-auf-talfahrt-ce785ed3dd88f62c</a></li>
+    <li>AWP currencies, via finanzen.ch, 20 November 2026, 21:24: <a href="https://www.finanzen.ch/nachrichten/devisen/devisen-franken-weiterhin-fest-euro-schwachelt-1036789235">https://www.finanzen.ch/nachrichten/devisen/devisen-franken-weiterhin-fest-euro-schwachelt-1036789235</a></li>
+    <li>Nikkei Indexes daily summary, 20 November 2026: <a href="https://indexes.nikkei.co.jp/en/nkave/archives/summary?dt=11202026">https://indexes.nikkei.co.jp/en/nkave/archives/summary?dt=11202026</a></li>
+    <li>Yonhap, Kospi close, 20 November 2026, 16:37: <a href="https://en.yna.co.kr/view/AEN20261120005652320">https://en.yna.co.kr/view/AEN20261120005652320</a></li>
+    <li>RTHK, Hong Kong and mainland close, 20 November 2026, 17:08: <a href="https://news.rthk.hk/rthk/en/component/k2/1878603-20261120.htm">https://news.rthk.hk/rthk/en/component/k2/1878603-20261120.htm</a></li>
+    <li>Reuters oil settlement, Erwin Seba, via Euronext: <a href="https://live.euronext.com/en/financial-news/oil-gains-iran-war-worries-and-short-covering-ahead-thanksgiving-holiday">https://live.euronext.com/en/financial-news/oil-gains-iran-war-worries-and-short-covering-ahead-thanksgiving-holiday</a></li>
+    <li>Xinhua, the same settlement: <a href="https://english.news.cn/20261121/b6d0c059c64642d996ab0dfb4d8eb4a4/c.html">https://english.news.cn/20261121/b6d0c059c64642d996ab0dfb4d8eb4a4/c.html</a></li>
+    <li>Reuters Take Five, 20 November 2026: <a href="https://www.investing.com/news/economy-news/take-five-shopping-chips-and-central-banks-5041291">https://www.investing.com/news/economy-news/take-five-shopping-chips-and-central-banks-5041291</a></li>
+    <li>AFP, via France 24, Paris close at 18:38 (CAC 40 confirmation; the Anthropic −9.80% line in that story is before the New York close): <a href="https://www.france24.com/fr/info-en-continu/20261120-la-bourse-de-paris-finit-dans-le-rouge-et-recule-de-plus-de-5-sur-la-semaine">https://www.france24.com/fr/info-en-continu/20261120-la-bourse-de-paris-finit-dans-le-rouge-et-recule-de-plus-de-5-sur-la-semaine</a></li>
+    <li>Vanguard Switzerland, FTSE All-World UCITS ETF (USD) Accumulating: <a href="https://www.ch.vanguard/en/private-investor/product/etf/equity/9679/vanguard-ftse-all-world-ucits-etf-usd-accumulating">https://www.ch.vanguard/en/private-investor/product/etf/equity/9679/vanguard-ftse-all-world-ucits-etf-usd-accumulating</a></li>
+  </ul>
+
+  <footer>
+    <p>This briefing is a record of published market closes and named reports for a long-term holder of one global equity fund. It is not investment advice, not a recommendation to buy or sell any security, and not a forecast. Prices move. The 31 October holdings table is already out of date relative to Friday’s tape. Alerts at 140 and 135 francs are the holder’s own levels, not Vanguard’s.</p>
+  </footer>
+</main>
+</body>
+</html>
