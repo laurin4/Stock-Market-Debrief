@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morning Market Briefing — 25 November 2026</title>
+<style>
+  :root {
+    --ink: #1c1915;
+    --muted: #5c564c;
+    --rule: #d9d0c3;
+    --paper: #f6f3ec;
+    --card: #fffdf8;
+    --red: #8d1d1d;
+    --green: #1d5c3a;
+    --amber: #8a5a12;
+    --chip: #efe8dc;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); }
+  body {
+    margin: 0 auto;
+    max-width: 880px;
+    padding: 32px 20px 64px;
+    color: var(--ink);
+    font: 17px/1.55 "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  }
+  header.mast {
+    border-top: 4px solid var(--ink);
+    padding-top: 14px;
+    margin-bottom: 18px;
+  }
+  .kicker {
+    font-family: "Gill Sans", "Trebuchet MS", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin: 0 0 6px;
+  }
+  h1 {
+    font-size: 34px;
+    line-height: 1.15;
+    font-weight: 600;
+    margin: 0 0 8px;
+  }
+  .meta {
+    font-family: "Gill Sans", "Trebuchet MS", sans-serif;
+    font-size: 13.5px;
+    color: var(--muted);
+    margin: 0;
+  }
+  .lede {
+    font-size: 21px;
+    line-height: 1.4;
+    margin: 22px 0 8px;
+  }
+  .clock {
+    font-family: "Gill Sans", "Trebuchet MS", sans-serif;
+    font-size: 13.5px;
+    color: var(--muted);
+    margin: 0 0 22px;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin: 0 0 28px;
+  }
+  .stat {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    padding: 10px 12px 8px;
+  }
+  .stat .lbl {
+    font-family: "Gill Sans", "Trebuchet MS", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .stat .num {
+    font-variant-numeric: tabular-nums;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 2px;
+  }
+  .stat .chg { font-family: "Gill Sans", "Trebuchet MS", sans-serif; font-size: 13px; }
+  .up { color: var(--green); }
+  .dn { color: var(--red); }
+  .flat { color: var(--muted); }
+  h2 {
+    font-size: 13px;
+    font-family: "Gill Sans", "Trebuchet MS", sans-serif;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 4px;
+    margin: 32px 0 12px;
+  }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 1.2em; }
+  li { margin: 0 0 6px; }
+  .note {
+    font-family: "Gill Sans", "Trebuchet MS", sans-serif;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-variant-numeric: tabular-nums;
+    font-size: 15px;
+    margin: 8px 0 14px;
+  }
+  th, td {
+    text-align: right;
+    padding: 5px 8px;
+    border-bottom: 1px solid var(--rule);
+  }
+  th:first-child, td:first-child { text-align: left; }
+  th {
+    font-family: "Gill Sans", "Trebuchet MS", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  .call {
+    background: var(--card);
+    border-left: 3px solid var(--amber);
+    padding: 10px 14px;
+    margin: 12px 0;
+  }
+  .svgwrap {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    padding: 8px 8px 2px;
+    margin: 8px 0 6px;
+  }
+  svg { width: 100%; height: auto; display: block; }
+  .src a { color: #6d2a1e; }
+  .disclaimer {
+    font-family: "Gill Sans", "Trebuchet MS", sans-serif;
+    font-size: 13px;
+    color: var(--muted);
+    border-top: 1px solid var(--rule);
+    margin-top: 28px;
+    padding-top: 12px;
+  }
+  @media (max-width: 720px) {
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    h1 { font-size: 28px; }
+    .lede { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <p class="kicker">Morning Market Briefing · Swiss long-term ETF</p>
+  <h1>The rebound faded. The franc price of the world fund fell on a day its dollar value rose.</h1>
+  <p class="meta">Wednesday 25 November 2026 · 07:30 Europe/Zurich (Central European Time, UTC+1) · Session in hand: Tuesday cash in the Americas, Europe and Switzerland; Wednesday cash in Tokyo and Sydney. Zurich and New York had not opened.</p>
+</header>
+
+<p class="lede">Tuesday’s artificial-intelligence rebound faded in New York and Europe, VWRA’s Swiss-franc market price fell 2.18% while its dollar net asset value rose 0.24%, and Tokyo closed down 2.78% before the Swiss open.</p>
+<p class="clock">Figures below are the prints on the pages opened this morning. Where two wires disagree, both are shown and nothing is averaged. Live quote boards under articles were not used as closes.</p>
+
+<section class="stats" aria-label="Key figures">
+  <div class="stat"><div class="lbl">S&amp;P 500</div><div class="num">7,201.09</div><div class="chg dn">−36.08 · −0.50%</div></div>
+  <div class="stat"><div class="lbl">Dow</div><div class="num">50,018.70</div><div class="chg up">+423.39 · +0.85%</div></div>
+  <div class="stat"><div class="lbl">Nasdaq</div><div class="num">23,733.54</div><div class="chg dn">−356.02 · −1.48%</div></div>
+  <div class="stat"><div class="lbl">SMI</div><div class="num">14,733.89</div><div class="chg flat">−0.01%</div></div>
+  <div class="stat"><div class="lbl">STOXX 600</div><div class="num">632.74</div><div class="chg dn">DJ −0.66% · Reuters 632.77</div></div>
+  <div class="stat"><div class="lbl">Nikkei 225</div><div class="num">57,011.62</div><div class="chg dn">−1,633.01 · −2.78%</div></div>
+  <div class="stat"><div class="lbl">VWRA · CHF</div><div class="num">148.34</div><div class="chg dn">−3.30 · −2.18%</div></div>
+  <div class="stat"><div class="lbl">US 10-year</div><div class="num">4.901%</div><div class="chg dn">Tradeweb 3 p.m. · −1.8 bp</div></div>
+</section>
+
+<h2>Americas</h2>
+<p>Reuters’ closing file (Caroline Valetkevitch and Ragini Mathur, carried by NBC News at 5:56 p.m. Eastern and by the Investing.com copy updated 8:30 p.m.) is the New York equity close. The Nasdaq Composite and the Standard &amp; Poor’s 500 (S&amp;P 500) finished lower. The Dow Jones Industrial Average finished higher, at 50,018.70.</p>
+<ul>
+  <li>Dow Jones Industrial Average 50,018.70, up 423.39 points, or 0.85%.</li>
+  <li>S&amp;P 500 7,201.09, down 36.08 points, or 0.50%.</li>
+  <li>Nasdaq Composite 23,733.54, down 356.02 points, or 1.48%.</li>
+</ul>
+<p>Nvidia slipped 5.9%. Technology fell 2.8% and led the S&amp;P 500 sector declines. An index of semiconductors dropped 7.9%. Healthcare rose and led the sector gainers; the close file gives no percentage for it. Retailers were among the day’s gainers: Abercrombie &amp; Fitch rose 19.7% after raising its profit forecast, and Dollar Tree rose 11.2%, also after raising its outlook. Anthropic ended 6.5% lower at $81.90, under its $83 initial public offering price. Volume on United States exchanges was 18.89 billion shares, against a 20-day average of about 19.50 billion. On the New York Stock Exchange, declining issues outnumbered advancers by 1.04 to 1, with 58 new highs and 309 new lows. On the Nasdaq, 2,376 stocks rose and 2,548 fell (1.07 to 1); the Nasdaq Composite recorded 49 new highs and 323 new lows. The S&amp;P 500 posted 10 new 52-week highs and 4 new lows.</p>
+<p>The same Reuters file says Monday’s Nvidia-led jump had been the biggest daily percentage gain for the S&amp;P 500 and the Nasdaq since April 2025. Tuesday gave part of that back. The political and personal allegations around Jensen Huang’s return remain allegations in the copy: the wire describes his resignation earlier this month after revelations of extramarital affairs, including one with an alleged Chinese spy, and says investors were weighing political and governance risks around the reinstatement. That is not a finding.</p>
+<p>Reuters, citing three people, reported that the administration is poised to release the findings of a probe aimed at alleged excess industrial capacity in 16 major United States trading partners, and that new import duties on a wide range of goods are expected. The Treasury story, a separate Reuters file, says the Wall Street Journal reported that the United States was preparing to raise tariffs on China and other countries. Neither file is a published tariff schedule. The afternoon bond copy and the equity-close copy do not use the same list of countries. They are not merged here.</p>
+<p>The Conference Board’s consumer confidence index, in the Reuters Treasury story (Chuck Mikolajczak, “updates to afternoon trading”), jumped to 103.3 in November, the highest since January 2025, from a slightly upwardly revised 91.9 in October. Economists polled by Reuters had looked for 92.5. The equity-close file describes the same survey only as the highest in nearly two years, with no index level.</p>
+<p>Yields depend on the clock.</p>
+<ul>
+  <li>Dow Jones, from Tradeweb FTSE United States Treasury Closing Prices at 3 p.m. Eastern: the 10-year yield fell 0.018 percentage point to 4.901%. The price rose 5/32 to 100 25/32. Dow Jones calls it the lowest yield since Monday 9 November 2026, down six of the past seven trading days.</li>
+  <li>The Reuters afternoon bond file, which is not labelled as that 3 p.m. Tradeweb close: the 10-year fell 1.6 basis points to 4.906%, the 30-year slipped 0.5 basis point to 5.29%, and the 2-year rose 1.9 basis points to 4.685%. The gap between the 2-year and the 10-year was a positive 21.9 basis points after narrowing to 21.6, its flattest since 12 November. A $70 billion auction of 5-year notes drew a bid-to-cover of 2.37 times and a yield of 4.719%. The same story says $44 billion of 7-year notes are due on Wednesday.</li>
+  <li>Diana Mandia’s Reuters Europe-close file (18:14 Paris) had the United States 10-year down 3 basis points at 4.8899% and the 2-year unchanged at 4.6643%. That is the European afternoon, not the New York bond close.</li>
+</ul>
+<p>Rate probabilities also depend on the file. The equity-close story and the New York dollar story both say CME Group’s FedWatch tool showed a 97% chance of a Federal Reserve hike in December and a 66% chance of an additional increase in January. The afternoon bond story says markets were completely pricing a hike of at least 25 basis points in December, with a 2.9% chance of 50 basis points. Those snapshots are not averaged. No page opened this morning named the December meeting’s calendar dates. New York Fed President John Williams, quoted in the bond story from Monday, said persistently high inflation still points toward tighter policy and that the pace depends on incoming data.</p>
+<p>The dollar story on the Euronext page (Karen Brettell, New York, page stamp Tuesday 24 November 20:44) is the later currency file: the dollar index fell 0.47% to 103.81, the euro was up 0.6% at $1.0966, the yen weakened 0.16% to 159.24 per dollar, and sterling strengthened 0.64% to $1.3112. The Australian dollar gained 0.24% to $0.6641 and was still near an 11-month low. An earlier London write-through that had shown a round “104” on this wire is not the text on the page now, and those superseded lasts are omitted. Mandia’s Europe-close file had the dollar down 0.47% and the euro up 0.61% at $1.0967. The index level is the same; the euro differs by a tenth of a cent. The 20:44 stamp is 15:44 in New York, before the 4 p.m. equity close, so 103.81 is the story’s last, not a 4 p.m. fixing.</p>
+
+<h2>Europe and Switzerland</h2>
+<p>European shares closed lower after Monday’s jump. The English Reuters close (Anjana Jayakrishnan Nair and Johann M. Cherian) has the STOXX Europe 600 down 0.7% at 632.77. Dow Jones Market Data has the same index down 4.23 points, or 0.66%, at 632.74. The French Reuters file has −0.66% and no level. Both levels are printed. They are 0.03 of a point apart. Nothing is averaged.</p>
+<p>Dow Jones on the STOXX 600: down six of the past seven sessions, 4.73% under the record close of 664.14 on Friday 13 November, month-to-date −2.17%, year-to-date up 40.55 points, or 6.85%.</p>
+<ul>
+  <li>Germany, DAX, Dow Jones: 25,017.81, down 319.46 points, or 1.26%. Down seven of the past eight sessions. The record close remains 26,771.88 on Thursday 12 November, and the index is 6.55% under it. Year-to-date the DAX is up 527.40 points, or 2.15%. The French Reuters file says the DAX fell 1.31% and gives no level. AWP’s French copy says Frankfurt fell 1.26%, which matches Dow Jones’ percentage, still without repeating the 25,017.81 level.</li>
+  <li>United Kingdom, FTSE 100, Dow Jones: 10,467.07, down 13.75 points, or 0.13%. Down six of the past seven sessions. The record close on that page is 10,910.55 on Friday 27 February, and the index is 4.06% under it. Year-to-date it is up 535.69 points, or 5.39%. Reuters’ percentage is the same −0.13%, with no level in the French file.</li>
+  <li>France, CAC 40, Reuters: 8,040.49, down 0.05%. Sanofi limited the loss. AWP agrees on −0.05% for Paris and −0.13% for London, and says Milan also fell 1.26%.</li>
+</ul>
+<p>Inside the STOXX 600, Reuters says technology gave up nearly 3% (the French file prints −2.98% after more than 4% on Monday). Basic resources fell 4.72% in the French file; the English file says miners were down almost 5% as gold and copper slipped. Healthcare was up nearly 2%. Sanofi gained 9.7% after agreeing to buy Insmed for $41 billion, which Reuters calls the largest deal of chief executive Belen Garijo’s tenure. Aixtron fell 16.3% after UBS cut it to “sell”. Infineon fell more than 9% and ASM International more than 8%. Kingfisher fell 4.8% in the English file and 4.7% in the French file. Compass Group rose about 4.2%.</p>
+<p>Euro-area bond yields in the French Reuters close: the 10-year German Bund fell 1.7 basis points to 3.2658%, and the 2-year finished at 3.0651%, also slightly lower. The French 10-year OAT finished at 4.7791%. The spread over Germany was about 150 basis points, against peaks above 170 basis points in mid-October. European Central Bank governing-council member Olaf Sleijpen said the central bank should still raise rates in December and that the path after that is uncertain. Germany’s Ifo institute said business morale rose for a seventh straight month. No index level was in the copies opened.</p>
+<p>Switzerland, AWP. The cash.ch close is stamped 24 November, 18:15, and the lede is Tuesday. One paragraph in that copy says the Swiss Market Index (SMI) “closed on Monday” at 14,733.89. L’Agefi’s AWP copy, stamped 18:37, says Tuesday’s session ended at the same 14,733.89, down 0.01%, with a high of 14,786.59 and a low of 14,686.87. The level is treated as Tuesday’s close. The word “Monday” in the cash.ch paragraph is the slip, not a second session.</p>
+<ul>
+  <li>SMI 14,733.89, −0.01%. The cash.ch copy says the prior day had been a gain of 1.1%.</li>
+  <li>SMI Mid (SMIM), the mid-cap index, cash.ch: 3,169.73, −0.33%.</li>
+  <li>Swiss Performance Index (SPI): 20,691.48, −0.12% in both AWP copies.</li>
+  <li>Swiss Leader Index, Agefi only: 2,361.40, −0.34%. Of its 30 names, 15 rose, 14 fell, and Helvetia Baloise was unchanged. Cash.ch says winners and losers in the SMI itself were exactly balanced. Those are different baskets.</li>
+</ul>
+<p>Defensive heavyweights held the SMI up. The two AWP copies do not agree on every name, so both are kept. Nestlé was +1.7% at cash.ch and +1.6% at Agefi. Agefi adds that Nestlé, the evening before, said it would close a Colombian plant damaged in the August earthquake. Novartis was +0.5% at cash.ch and +0.4% at Agefi. Roche was +1.4% in both. Both copies say Roche’s medicine Wilserdly (giredestrant) has a new United States approval; the Food and Drug Administration release was not opened. Agefi’s podium is Straumann +1.8%, Nestlé, and Swisscom +1.6%. Cash.ch also has Swiss Re +1.2%, Swiss Life +0.3%, Zurich +0.2%, and, outside the SMI, Sunrise +1.8%.</p>
+<p>On the other side, both copies have UBS −1.6%, ABB −4.2%, and VAT Group −5.9%. The National Council’s economic affairs committee (WAK-N) said it supports the Council of States’ version of the UBS capital bill: 90% coverage of foreign subsidiaries with hard equity. Agefi also has Julius Baer −2.5% and Kuehne+Nagel −3.6%, and says Deutsche Bank cut its ABB price target. Cash.ch has Sandoz and Galderma each −2.3%, Comet −7.8%, Inficon −5.7%, ams Osram −10.8%, Huber+Suhner −5.9%, and DocMorris −10.6%.</p>
+<p>The franc, AWP via finanzen.ch, stamped 24 November 21:15 Zurich, which is 15:15 in New York and still before the equity close. The euro was at 0.9160 francs, a bit under the late-afternoon level. The dollar was at 0.8352 francs. The euro was at $1.0966, the same dollar rate as the later New York currency story. The homepage currency ticker beside that article was not used. No franc quote from after the New York equity close was opened. At 17:50 Zurich, Agefi’s market snapshot (Dow +0.33%, S&amp;P 500 −0.83%, Nasdaq −2.03%, Brent $90.31, West Texas Intermediate $80.91) is not the close and not the oil settlement.</p>
+
+<h2>Asia and commodities</h2>
+<p>Tokyo is the Wednesday cash close that was in. Nikkei Indexes’ profile page reads 57,011.62, down 1,633.01, or 2.78%, marked “Nov/25/2026 (Close)”. The open was 58,383.49 at 09:00, the high 58,472.56 at 09:02, and the low 56,502.97 at 11:23. The divisor was 29.66435840. The daily history file was still stamped “Update: Nov/24/2026” and its last row is still Tuesday’s 58,644.63. The daily-summary link for 25 November still displayed Tuesday, including Tuesday’s breadth (167 up, 58 down). There is no Wednesday breadth figure from Nikkei on the pages opened. The Australian Broadcasting Corporation’s Sydney-close note said the Nikkei was down 2.8%, which rounds the official −2.78% and is not a second level.</p>
+<p>Seoul’s closing flash was not on the Yonhap pages opened. What was there: a sell-side sidecar from 09:09 for five minutes, after Kospi 200 futures fell at least 5% for at least one minute, and an 11:20 a.m. print of 4,728.81, down 277.22 points, or 5.54%, after an open 3.94% lower. Tuesday’s Yonhap close remains 5,006.03, up 297.49 points, or 6.32%. The ABC note at the Sydney close said the Kospi was down 6.5% “just before” the close and gave no level. That is not a close. Hong Kong and Shanghai were still in session at 07:30 Zurich. No Wednesday close was printed for either. Intraday percentages on the ABC live snapshot were not used.</p>
+<p>Sydney is closed. Reuters, via Business Recorder: the S&amp;P/ASX 200 closed down 0.4% at 8,692.40. The same story says Tuesday had been a 1.8% rise and gives no Tuesday level. The ABC close post rounds Wednesday to 8,692, down 0.4%. A 4:10 p.m. Sydney snapshot at 8,694 was still a live line and is not the close. Banks ended 0.2% lower (Westpac −0.8%, ANZ −0.3%, National Australia Bank −0.7%). Miners slid 2.3% (BHP −1.9%, Rio Tinto −2%). New Zealand’s S&amp;P/NZX 50 rose 0.6% to 14,047.93.</p>
+<p>Australia’s consumer price index, as the ABC reported it from the Australian Bureau of Statistics: headline inflation 4.9% in the year to October, up from 4.3% in September, with the trimmed mean at 3.8%. Housing rose 6.4%, compared with 5.2% in the year to September. The ABS said fuel was excluded from the trimmed mean in October. The Reuters share story says core inflation accelerated to its fastest pace since 2024 and was above expectations, and it does not print the 4.9% or the 3.8%. Reuters’ rates line: markets now put a three-in-four chance on a Reserve Bank of Australia cut in June, after having almost fully priced one following last week’s jobs report. The policy rate is described as an 18-year high, after five hikes this year. A Commonwealth Bank of Australia note carried by the ABC is a different clock and a different path: the Australian dollar briefly moved toward 0.6670 United States dollars after the inflation figures and was back near 0.6590, and that bank still looks for a first cut in August 2027. Those two rate views are not averaged. A Reserve Bank domestic-markets official, David Jacobs, said financial conditions are “clearly restrictive”.</p>
+<p>At 4:00 p.m. Sydney (06:00 UTC, half an hour before this note), the ABC had S&amp;P 500 futures −0.6%, Dow futures −0.3% and Nasdaq futures −0.9%. That is a futures snapshot, not a cash open.</p>
+<p>Oil is the New York settlement, and the two wires agree. Xinhua, filed 04:16 on 25 November: West Texas Intermediate for January delivery rose $1.88, or 2.35%, to $82.05 a barrel on the New York Mercantile Exchange. Brent for January delivery rose $2.03, or 2.27%, to $91.40 on the London ICE Futures Exchange. CNBC’s settlement story matches both prices and adds the session lows: Brent $88.10, its lowest since 27 August, and West Texas Intermediate $79.07, the weakest since 10 August. The Agefi 17:50 Zurich quotes ($90.31 and $80.91) and the European-close Reuters quotes ($89.87 and $80.66) are earlier running prices, not the settlement.</p>
+<p>The attack lines stay attributed. CNBC: Iran’s Revolutionary Guards, via state media, said a container ship was targeted on an “unauthorised” route near the Strait of Hormuz. The United Kingdom Maritime Trade Operations said on Tuesday that three vessels had been struck by unidentified projectiles on Monday while sailing east through the strait; all three continued, and all crew were accounted for. A separate Wall Street Journal report, cited by CNBC, said the United States is investigating whether Iran was involved in cyberattacks on as many as 50 energy tankers. Agefi’s AWP copy, quoting analysts, said Iran had signalled that other tankers hit mines on Tuesday. That sentence was not matched to a primary statement opened this morning.</p>
+<p>Gold is a futures settlement, not a spot price. Dow Jones: front-month Comex gold for November delivery lost $89.30 an ounce, or 2.45% rounded, to $3,559.90. Down four of the past five sessions. Dow Jones calls it the second-lowest settlement this year, 1.36% above the 2026 settlement low of $3,512.30 on Friday 20 November, and 33.06% under the settlement high of $5,318.40 on 29 January. The ABC’s later spot line near $3,547 was a live snapshot and is not this settlement.</p>
+
+<h2>Long-term ETF lens</h2>
+<p>VWRA is the accumulating Vanguard FTSE All-World UCITS ETF, priced in francs on SIX, ISIN IE00BK5BQT80. It is one global equity fund. The published country weights are still as at 31 October: United States 62.83%, Japan 5.94%, Taiwan 3.31%, United Kingdom 3.25%, Switzerland 2.08%. The fund held 3,574 stocks against 4,199 in the FTSE All-World Index. The price/earnings ratio was 19.6 times. The three largest holdings were still Apple 4.74363%, Nvidia 4.54553% and Microsoft 3.69160%. Share-class assets were $62.19 billion and total assets $88.84 billion. The ongoing charges figure is 0.14%. None of those portfolio figures moved on the page read this morning. They do not reflect November’s swing in the artificial-intelligence names.</p>
+<p>Tuesday’s franc price and the dollar net asset value moved in opposite directions. That is the point for a holder who lives in francs. A single global fund can fall in the currency of the savings account on a day the fund’s dollar value rises. Over the ten rows Vanguard is still showing, the franc price is also down by more than the dollar net asset value, but that is a separate arithmetic span, not Tuesday’s session. See the VWRA section for both.</p>
+<p>For a long horizon, Tuesday is a fade of one rebound inside a fund that is still mostly American equities, with a thin Swiss sleeve. The 31 October weights mean the fund, as last disclosed, is more exposed to the companies that led both Monday’s jump and Tuesday’s give-back than a domestic Swiss portfolio is. The SMI itself was unchanged. VWRA in francs was not.</p>
+
+<h2>Hottest tactical</h2>
+<p>The heat is the gap between the order book and the tape. Dell Technologies reported after the Tuesday close. The company release: record quarterly revenue of $54.9 billion, up 103%; record non-GAAP diluted earnings per share of $9.45, up 265%; Infrastructure Solutions Group revenue of $42.0 billion, up 198%, including $22.0 billion of artificial-intelligence-optimised servers. Artificial-intelligence server backlog ended at a record $132.3 billion after $60.2 billion of orders. Full-year revenue guidance went to $202.0 billion from $192.0 billion. The additional buyback authorisation is $25.0 billion. Reuters’ copy prints quarterly revenue as $54.94 billion, against an LSEG estimate of $49.32 billion, and adjusted earnings per share of $9.45 against an estimate of $6.59. Reuters said the shares were up about 5% in extended trading. Mandia’s European-close file, written before those results, had Dell down more than 12% on the session. The regular-session closing percentage was not in the New York equity-close story. Reuters also said Dell and HP both warned that the memory-chip shortage runs into 2027. HP’s fourth-quarter revenue, in that Reuters story only, was $16 billion against an estimate of $15.42 billion.</p>
+<p>That fundamental print did not stop Tuesday’s cash market from handing back a large piece of Monday. Nvidia’s close was −5.9%, semiconductors −7.9%, and Tokyo −2.78% the next morning. For a fund that still lists Nvidia as its second holding on stale October weights, the tactical question is whether the spending Dell just booked keeps showing up in index earnings, or whether the multiple keeps being marked down faster than the orders arrive. That is a description of the tension. It is not a trade.</p>
+
+<h2>Biggest risk</h2>
+<p>Today’s United States inflation print meets a rates market that has already gone a long way toward a December hike, plus a tariff story that is still a report. October personal income, personal spending and the Personal Consumption Expenditures price index are due on Wednesday. The equity-close file calls that index one of the gauges the Federal Reserve watches. FedWatch in that file was at 97% for a December hike and 66% for another move in January. The afternoon bond file had December fully priced for at least 25 basis points and only a 2.9% chance of 50. A hotter price index would land on a market that is not starting from an easy-policy assumption.</p>
+<p>The tariff risk is the one that is not yet a document. New duties, if the reported probe is released as the wire describes, would push on goods prices while the central bank is being priced to tighten. VWRA’s last published United States weight is 62.83%. The second channel is the franc. Tuesday already showed it: the dollar net asset value rose 0.24% and the franc market price fell 2.18%. A firmer franc can cut the balance the saver sees even when the global index in dollars does not.</p>
+
+<h2>Calendar</h2>
+<ul>
+  <li>Wednesday 25 November, United States: October personal income, spending and the Personal Consumption Expenditures price index. The stories opened do not give a release hour or a consensus figure. Treasury auction: $44 billion of 7-year notes, per the Reuters bond file.</li>
+  <li>Wednesday, Switzerland and the euro area: cash markets had not opened at 07:30 Zurich. No European holiday was on the pages read.</li>
+  <li>Thursday 26 November: Thanksgiving. The New York Stock Exchange calendar says the market is closed.</li>
+  <li>Friday 27 November: the New York Stock Exchange closes early at 1:00 p.m. Eastern (1:15 p.m. for eligible options). Late trading sessions on NYSE American, NYSE Arca, NYSE National and NYSE Texas close at 5:00 p.m. Eastern.</li>
+  <li>Thursday is also the Bachem investor day named in the AWP Swiss close. That is a single-company date, not a market holiday.</li>
+  <li>The December Federal Reserve meeting is in the rate stories. The day of the month was not on the pages opened this morning, so it is not stated.</li>
+</ul>
+
+<h2>VWRA in francs</h2>
+<p>Vanguard’s page, read this morning. Both stamps say “at closure 24 Nov 2026”.</p>
+<ul>
+  <li>Market price: 148.34 francs, down 3.30 francs, or 2.18%.</li>
+  <li>Net asset value: the header rounds to $178.76, up $0.43, or 0.24%. The history row prints $178.7613.</li>
+  <li>52-week franc high and low, still 162.38 and 129.36. Dollar net-asset-value high and low, still $195.62 and $161.35. The range stamp has moved to “at closure 25 Nov 2026”. The levels have not.</li>
+  <li>Alert levels 140 and 135 were not hit. The close is 8.34 francs above 140 and 13.34 francs above 135. Arithmetic, not a Vanguard statistic: the close is 14.04 francs, or 8.6%, under the 52-week franc high of 162.38.</li>
+</ul>
+
+<div class="svgwrap" role="img" aria-label="Sparkline of VWRA’s franc market price from 11 to 24 November 2026, with reference lines at 140 and 135 francs and the 52-week high at 162.38.">
+<svg viewBox="0 0 700 168" xmlns="http://www.w3.org/2000/svg">
+  <rect width="700" height="168" fill="#fffdf8"/>
+  <line x1="48" y1="25.9" x2="660" y2="25.9" stroke="#c4b8a4" stroke-dasharray="3 4"/>
+  <line x1="48" y1="108" x2="660" y2="108" stroke="#8a5a12" stroke-dasharray="4 3"/>
+  <line x1="48" y1="126.3" x2="660" y2="126.3" stroke="#8d1d1d" stroke-dasharray="4 3"/>
+  <polyline fill="none" stroke="#1c1915" stroke-width="2"
+    points="56,42.3 120.9,41.3 185.8,45.1 250.7,48.3 315.6,61.3 380.4,60.1 445.3,61.7 510.2,82.8 575.1,65.3 640,77.4"/>
+  <circle cx="510.2" cy="82.8" r="3" fill="#8d1d1d"/>
+  <circle cx="640" cy="77.4" r="3.5" fill="#1c1915"/>
+  <text x="664" y="24" font-size="11" fill="#5c564c" font-family="Gill Sans, Trebuchet MS, sans-serif">162.38</text>
+  <text x="664" y="111" font-size="11" fill="#8a5a12" font-family="Gill Sans, Trebuchet MS, sans-serif">140</text>
+  <text x="664" y="129" font-size="11" fill="#8d1d1d" font-family="Gill Sans, Trebuchet MS, sans-serif">135</text>
+  <text x="56" y="156" font-size="11" fill="#5c564c" font-family="Gill Sans, Trebuchet MS, sans-serif">11 Nov</text>
+  <text x="470" y="156" font-size="11" fill="#8d1d1d" font-family="Gill Sans, Trebuchet MS, sans-serif">20 Nov low</text>
+  <text x="600" y="156" font-size="11" fill="#1c1915" font-family="Gill Sans, Trebuchet MS, sans-serif">24 Nov</text>
+</svg>
+</div>
+<p class="note">Franc market price on the ten history rows Vanguard is showing. The scale runs from 134 to 164 so the 140 and 135 alerts and the 52-week high sit on the same drawing. The low mark is Friday 20 November at 146.88 francs. Neither alert is on the series.</p>
+
+<table>
+  <thead><tr><th>Close</th><th>Franc price</th><th>Net asset value</th></tr></thead>
+  <tbody>
+    <tr><td>11 Nov</td><td>157.92</td><td>$189.4469</td></tr>
+    <tr><td>12 Nov</td><td>158.18</td><td>$188.6596</td></tr>
+    <tr><td>13 Nov</td><td>157.16</td><td>$187.9772</td></tr>
+    <tr><td>16 Nov</td><td>156.28</td><td>$184.7690</td></tr>
+    <tr><td>17 Nov</td><td>152.74</td><td>$182.5667</td></tr>
+    <tr><td>18 Nov</td><td>153.06</td><td>$181.7240</td></tr>
+    <tr><td>19 Nov</td><td>152.62</td><td>$178.8118</td></tr>
+    <tr><td>20 Nov</td><td>146.88</td><td>$172.9725</td></tr>
+    <tr><td>23 Nov</td><td>151.64</td><td>$178.3265</td></tr>
+    <tr><td>24 Nov</td><td>148.34</td><td>$178.7613</td></tr>
+  </tbody>
+</table>
+<p class="note">Arithmetic on those rows, not a Vanguard return: from 11 November to 24 November the franc price fell 9.58 francs, or 6.1%, and the net asset value fell $10.6856, or 5.6%. Tuesday alone was the other way around in sign: francs −2.18%, dollars +0.24%.</p>
+
+<div class="call">
+  <strong>Alerts 140 and 135.</strong> Not hit. The 24 November franc close, 148.34, sits 8.34 francs above 140 and 13.34 francs above 135. The 52-week low on the page is still 129.36, which is under both alerts. The range stamp moved forward one day; the high and the low did not.
+</div>
+
+<h2>Fact and speculation</h2>
+<p><strong>Fact, from the pages opened.</strong> Tuesday’s New York closes: Dow 50,018.70 (+0.85%), S&amp;P 500 7,201.09 (−0.50%), Nasdaq 23,733.54 (−1.48%). Nvidia −5.9%. Semiconductors −7.9%. Anthropic $81.90, −6.5%. Tradeweb 10-year at 3 p.m. Eastern, 4.901%. Dollar-index last in the New York currency story, 103.81 (−0.47%), euro $1.0966, with the stamp before the equity close. STOXX 600: Reuters 632.77 and Dow Jones 632.74. DAX 25,017.81 on Dow Jones, against a Reuters percentage of −1.31% with no level. FTSE 100 10,467.07. CAC 40 8,040.49. SMI 14,733.89. SPI 20,691.48. Nikkei Wednesday close 57,011.62. ASX 200 8,692.40. Brent $91.40 and West Texas Intermediate $82.05, January settlement. Comex gold $3,559.90. VWRA 148.34 francs and net asset value $178.7613. Conference Board 103.3. Australian headline inflation 4.9% and trimmed mean 3.8%, as the ABC reported the statistics bureau. New York closed Thursday; early close Friday at 1:00 p.m. Eastern. Dell’s release: revenue $54.9 billion, backlog $132.3 billion, full-year revenue guide $202.0 billion.</p>
+<p><strong>Reported, not a document in hand.</strong> The tariff probe and the expected duties, sourced to three people in the Reuters equity close, and the Wall Street Journal line in the bond story. The Revolutionary Guards’ account of a targeted ship, the United Kingdom Maritime Trade Operations account of Monday’s three vessels, and the Wall Street Journal cyber investigation. Iran’s mine remark, only as AWP carried it. Roche’s United States approval, only as AWP’s sentence. Huang’s personal allegations, which the wires still describe as allegations.</p>
+<p><strong>Not a close, and not used as one.</strong> Mandia’s New York snapshot at the European close (S&amp;P 500 −0.93%, Nasdaq −2.11%, Nvidia −8.6%). Agefi at 17:50 Zurich. Cash.ch’s “Nvidia down more than 8%” inside the Swiss-close story. The European-close oil quotes. The ABC 4:10 p.m. Sydney live snapshot, including its 8,694 line, its spot gold, and its cross-market percentages. Investing.com and finanzen.ch quote boards. Any Kospi figure after 11:20 a.m., because no closing flash was opened. The Nikkei history file, which has not yet added Wednesday.</p>
+<p><strong>Speculation, labelled as someone else’s view.</strong> Gene Goldman of Cetera, in the Reuters close: Monday was a buying opportunity for long-term investors, and the path can stay bumpy. Mike Coop of Morningstar Wealth: late innings of an artificial-intelligence bull market, with wider swings. A Swiss observer in the AWP copy calling Huang’s return questionable on governance grounds. Commonwealth Bank of Australia’s August 2027 cut call, against the rates market’s June odds in the Reuters Australia story. Sleijpen’s “uncertain after December”. None of these is a forecast of this note.</p>
+
+<h2>Sources</h2>
+<ul class="src">
+  <li>Reuters United States equity close, via Investing.com: <a href="https://www.investing.com/news/economy-news/wall-st-futures-dip-as-chip-stocks-cool-after-nvidiafueled-rally-5047567">https://www.investing.com/news/economy-news/wall-st-futures-dip-as-chip-stocks-cool-after-nvidiafueled-rally-5047567</a></li>
+  <li>The same Reuters close, via NBC News: <a href="https://www.nbcnews.com/business/markets/stocks-lower-after-nvidia-fueled-gains-rcna611211">https://www.nbcnews.com/business/markets/stocks-lower-after-nvidia-fueled-gains-rcna611211</a></li>
+  <li>Reuters Treasuries, via Mint: <a href="https://www.livemint.com/market/us-yields-little-changed-as-ai-rally-fades-11795550412000.html">https://www.livemint.com/market/us-yields-little-changed-as-ai-rally-fades-11795550412000.html</a></li>
+  <li>Dow Jones 10-year, Tradeweb 3 p.m., via Morningstar: <a href="https://www.morningstar.com/news/dow-jones/202611246890/10-year-treasury-yield-falls-to-4901-data-talk">https://www.morningstar.com/news/dow-jones/202611246890/10-year-treasury-yield-falls-to-4901-data-talk</a></li>
+  <li>Reuters dollar, New York file on Euronext: <a href="https://live.euronext.com/en/financial-news/dollar-takes-breather-ai-driven-rally">https://live.euronext.com/en/financial-news/dollar-takes-breather-ai-driven-rally</a></li>
+  <li>Reuters dollar, earlier stamp of the same New York file, via Investing.com: <a href="https://www.investing.com/news/forex-news/dollar-climbs-as-renewed-ai-euphoria-fuels-fed-hike-bets-5046813">https://www.investing.com/news/forex-news/dollar-climbs-as-renewed-ai-euphoria-fuels-fed-hike-bets-5046813</a></li>
+  <li>Reuters Europe close, via Investing.com: <a href="https://www.investing.com/news/stock-market-news/europes-stoxx-600-subdued-after-aidriven-rally-5047331">https://www.investing.com/news/stock-market-news/europes-stoxx-600-subdued-after-aidriven-rally-5047331</a></li>
+  <li>Reuters Europe close in French, Diana Mandia, via Boursorama: <a href="https://www.boursorama.com/bourse/actualites/l-europe-finit-dans-le-rouge-le-rebond-lie-a-nvidia-decline-2ddeb473eb0118e3b9218b7dd69eae5d">https://www.boursorama.com/bourse/actualites/l-europe-finit-dans-le-rouge-le-rebond-lie-a-nvidia-decline-2ddeb473eb0118e3b9218b7dd69eae5d</a></li>
+  <li>Dow Jones STOXX 600, via Morningstar: <a href="https://www.morningstar.com/news/dow-jones/202611245870/stoxx-europe-600-index-ends-066-lower-at-63274-data-talk">https://www.morningstar.com/news/dow-jones/202611245870/stoxx-europe-600-index-ends-066-lower-at-63274-data-talk</a></li>
+  <li>Dow Jones DAX, via Morningstar: <a href="https://www.morningstar.com/news/dow-jones/202611245875/dax-ends-126-lower-at-2501781-data-talk">https://www.morningstar.com/news/dow-jones/202611245875/dax-ends-126-lower-at-2501781-data-talk</a></li>
+  <li>Dow Jones FTSE 100, via Morningstar: <a href="https://www.morningstar.com/news/dow-jones/202611245871/ftse-100-index-ends-013-lower-at-1046707-data-talk">https://www.morningstar.com/news/dow-jones/202611245871/ftse-100-index-ends-013-lower-at-1046707-data-talk</a></li>
+  <li>AWP Swiss close, via cash.ch: <a href="https://www.cash.ch/news/aktien-schweiz-schluss-smi-legt-pause-ein-gewinnmitnahmen-nach-nvidia-rally-987801">https://www.cash.ch/news/aktien-schweiz-schluss-smi-legt-pause-ein-gewinnmitnahmen-nach-nvidia-rally-987801</a></li>
+  <li>AWP Swiss close, via L’Agefi: <a href="https://agefi.com/actualites/marches/le-smi-cloture-dans-le-rouge-plombe-par-ubs">https://agefi.com/actualites/marches/le-smi-cloture-dans-le-rouge-plombe-par-ubs</a></li>
+  <li>AWP franc quote, via finanzen.ch: <a href="https://www.finanzen.ch/nachrichten/devisen/devisen-franken-tendiert-etwas-fester-1036797402">https://www.finanzen.ch/nachrichten/devisen/devisen-franken-tendiert-etwas-fester-1036797402</a></li>
+  <li>Nikkei Indexes profile (Wednesday close): <a href="https://indexes.nikkei.co.jp/en/nkave/index/profile?idx=nk225">https://indexes.nikkei.co.jp/en/nkave/index/profile?idx=nk225</a></li>
+  <li>Nikkei Indexes daily history (still through Tuesday): <a href="https://indexes.nikkei.co.jp/en/nkave/archives/data?list=daily&amp;month=11&amp;year=2026">https://indexes.nikkei.co.jp/en/nkave/archives/data?list=daily&amp;month=11&amp;year=2026</a></li>
+  <li>Reuters Australia close, via Business Recorder: <a href="https://www.brecorder.com/news/40450670">https://www.brecorder.com/news/40450670</a></li>
+  <li>Australian Broadcasting Corporation, inflation and the Sydney session: <a href="https://www.abc.net.au/news/2026-11-25/asx-markets-business-live-news/107423208">https://www.abc.net.au/news/2026-11-25/asx-markets-business-live-news/107423208</a></li>
+  <li>Yonhap, Kospi sidecar: <a href="https://en.yna.co.kr/view/AEN20261125001800320">https://en.yna.co.kr/view/AEN20261125001800320</a></li>
+  <li>Yonhap news summary, 11:20 a.m. Kospi print: <a href="https://en.yna.co.kr/view/AEN20261125004900320">https://en.yna.co.kr/view/AEN20261125004900320</a></li>
+  <li>Yonhap, Tuesday Kospi close: <a href="https://en.yna.co.kr/view/PYH20261124161200315">https://en.yna.co.kr/view/PYH20261124161200315</a></li>
+  <li>CNBC, oil settlement: <a href="https://www.cnbc.com/2026/11/24/oil-wti-brent-hormuz-supply.html">https://www.cnbc.com/2026/11/24/oil-wti-brent-hormuz-supply.html</a></li>
+  <li>Xinhua, oil settlement: <a href="https://english.news.cn/20261125/0a1cacb7a8b24dfc87c2ffd21b59ce6f/c.html">https://english.news.cn/20261125/0a1cacb7a8b24dfc87c2ffd21b59ce6f/c.html</a></li>
+  <li>Dow Jones Comex gold, via Morningstar: <a href="https://www.morningstar.com/news/dow-jones/202611246254/comex-gold-settles-245-lower-at-355990-data-talk">https://www.morningstar.com/news/dow-jones/202611246254/comex-gold-settles-245-lower-at-355990-data-talk</a></li>
+  <li>Vanguard VWRA, Switzerland: <a href="https://www.ch.vanguard/en/private-investor/product/etf/equity/9679/ftse-all-world-ucits-etf-usd-accumulating">https://www.ch.vanguard/en/private-investor/product/etf/equity/9679/ftse-all-world-ucits-etf-usd-accumulating</a></li>
+  <li>New York Stock Exchange holiday calendar: <a href="https://www.nyse.com/trade/hours-calendars">https://www.nyse.com/trade/hours-calendars</a></li>
+  <li>Dell Technologies third-quarter fiscal 2027 release: <a href="https://investors.delltechnologies.com/news-events/press-releases/detail/1665/dell-technologies-delivers-third-quarter-fiscal-2027-financial-results">https://investors.delltechnologies.com/news-events/press-releases/detail/1665/dell-technologies-delivers-third-quarter-fiscal-2027-financial-results</a></li>
+  <li>Reuters on Dell, via Investing.com: <a href="https://www.investing.com/news/stock-market-news/dell-lifts-annual-forecasts-after-record-quarter-on-surging-ai-server-demand-5049024">https://www.investing.com/news/stock-market-news/dell-lifts-annual-forecasts-after-record-quarter-on-surging-ai-server-demand-5049024</a></li>
+</ul>
+
+<p class="disclaimer">This note is a reading of published closes and official pages for a long-term holder of one accumulating global equity exchange-traded fund. It is not investment advice, not a recommendation to buy or sell, and not a forecast. Prices move. The alert levels at 140 and 135 francs are the reader’s own markers, not a signal from Vanguard. Abbreviation key on first use in the text: S&amp;P 500 is the Standard &amp; Poor’s 500, VWRA is the accumulating Vanguard FTSE All-World UCITS ETF, SMI is the Swiss Market Index, SPI is the Swiss Performance Index, SMIM is the SMI Mid, and the Personal Consumption Expenditures price index is the United States inflation gauge named in the Reuters close.</p>
+
+</body>
+</html>
