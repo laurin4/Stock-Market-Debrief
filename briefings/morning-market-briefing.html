@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morning Market Briefing — 26 November 2026</title>
+<style>
+  :root {
+    --ink: #1c1915;
+    --muted: #5e584e;
+    --faint: #8a8378;
+    --rule: #e4ddd2;
+    --paper: #f6f3ec;
+    --card: #fffdf8;
+    --up: #1b6b43;
+    --down: #8f2d2d;
+    --alert: #9a4310;
+    --chip: #efeae1;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); }
+  body {
+    margin: 0 auto;
+    max-width: 880px;
+    padding: 32px 20px 64px;
+    color: var(--ink);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  header { border-bottom: 1px solid var(--ink); padding-bottom: 16px; margin-bottom: 22px; }
+  .kicker {
+    font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 8px;
+  }
+  h1 { font-size: 34px; line-height: 1.12; font-weight: 600; margin: 0 0 8px; letter-spacing: -0.02em; }
+  .stamp { margin: 0; color: var(--muted); font-size: 15px; }
+  .lede { font-size: 21px; line-height: 1.4; margin: 0 0 22px; }
+  h2 {
+    font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 650;
+    margin: 32px 0 10px;
+    padding-top: 8px;
+  }
+  p { margin: 0 0 12px; }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin: 0 0 8px;
+  }
+  .stat {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    padding: 10px 12px 11px;
+  }
+  .stat b {
+    display: block;
+    font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .stat .n {
+    display: block;
+    font-variant-numeric: tabular-nums;
+    font-size: 20px;
+    margin-top: 2px;
+  }
+  .stat .d { display: block; font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif; font-size: 13px; }
+  .up { color: var(--up); }
+  .down { color: var(--down); }
+  .flat { color: var(--ink); }
+  ul { margin: 0 0 12px; padding-left: 1.15em; }
+  li { margin: 0 0 6px; }
+  .note {
+    background: var(--card);
+    border-left: 3px solid var(--ink);
+    padding: 12px 14px;
+    margin: 8px 0 12px;
+  }
+  .risk { border-left-color: var(--alert); }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-variant-numeric: tabular-nums;
+    font-size: 15px;
+    margin: 8px 0 14px;
+  }
+  th, td { text-align: right; padding: 6px 8px; border-bottom: 1px solid var(--rule); }
+  th:first-child, td:first-child { text-align: left; }
+  th {
+    font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  .chart-wrap { background: var(--card); border: 1px solid var(--rule); padding: 8px 8px 4px; margin: 8px 0 12px; }
+  .chart-wrap svg { width: 100%; height: auto; display: block; }
+  .caption { font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif; font-size: 12px; color: var(--faint); margin: 0 0 12px; }
+  .src { font-size: 15px; }
+  .src a { color: var(--ink); }
+  footer {
+    margin-top: 28px;
+    padding-top: 14px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 14px;
+  }
+  @media (max-width: 700px) {
+    body { font-size: 17px; padding: 20px 14px 48px; }
+    h1 { font-size: 28px; }
+    .lede { font-size: 19px; }
+    .stats { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <p class="kicker">Swiss long-term exchange-traded fund briefing</p>
+  <h1>Morning Market Briefing</h1>
+  <p class="stamp">Thursday 26 November 2026, about 07:35 Europe/Zurich. New York is shut for Thanksgiving. The cash session in hand for the United States, Europe and Switzerland is Wednesday 25 November. Tokyo’s Thursday close is in. Hong Kong and Shanghai were still open.</p>
+</header>
+
+<p class="lede">Wall Street clawed back most of a sharp morning drop and closed mixed, Europe and Zurich finished lower, and the Swiss-franc price of the Vanguard FTSE All-World fund ended at 144.56, 4.56 francs above the 140 alert.</p>
+
+<section class="stats" aria-label="Session snapshot">
+  <div class="stat"><b>S&amp;P 500</b><span class="n">7,182.78</span><span class="d down">−18.31 · −0.25%</span></div>
+  <div class="stat"><b>Dow</b><span class="n">50,182.95</span><span class="d up">+164.25 · +0.33%</span></div>
+  <div class="stat"><b>Nasdaq</b><span class="n">23,585.80</span><span class="d down">−147.73 · −0.62%</span></div>
+  <div class="stat"><b>SMI</b><span class="n">14,664.92</span><span class="d down">−0.47% · day low</span></div>
+  <div class="stat"><b>STOXX 600</b><span class="n">626.03</span><span class="d down">−1%</span></div>
+  <div class="stat"><b>VWRA francs</b><span class="n">144.56</span><span class="d down">−3.78 · −2.55%</span></div>
+  <div class="stat"><b>Brent, Jan</b><span class="n">$94.61</span><span class="d up">+$3.21 · +3.51%</span></div>
+  <div class="stat"><b>Core PCE</b><span class="n">3.3%</span><span class="d">year on year, October</span></div>
+</section>
+<p class="caption">Standard &amp; Poor’s 500, Dow Jones Industrial Average and Nasdaq Composite from the Reuters close. Swiss Market Index from AWP via Agefi. STOXX Europe 600 from Reuters. VWRA is the accumulating Vanguard FTSE All-World UCITS ETF on SIX, priced in Swiss francs. Brent is the Wednesday settlement. Core PCE is the Personal Consumption Expenditures price index excluding food and energy, from the Bureau of Economic Analysis. Clocks that disagree are kept apart below and are not averaged.</p>
+
+<h2>Americas</h2>
+<p>The Reuters close, Caroline Valetkevitch and Ragini Mathur, and the Associated Press index card print the same three lasts. The Associated Press rounds the day to 0.3%, 0.3% and 0.6%. The percentages below are Reuters. The Dow Jones Industrial Average rose 164.25 points, or 0.33%, to 50,182.95. The Standard &amp; Poor’s 500 lost 18.31 points, or 0.25%, to 7,182.78. The Nasdaq Composite lost 147.73 points, or 0.62%, to 23,585.80. CNBC’s 4:17 p.m. Eastern update prints the same three lasts. The Nasdaq had been down more than 4% early, Reuters said. CNBC put the session lows at about −4.6% for the Nasdaq and −3.2% for the S&amp;P 500, and said the Dow erased a plunge of about 1,100 points. Those lows are not the closes.</p>
+<p>Technology and consumer discretionary each fell 1% and led the S&amp;P 500 sector declines. Materials and real estate led the gainers. The Russell 1000 value index rose 0.4% and the Russell 1000 growth index fell 0.8%. Nvidia fell 3.9%. A semiconductor index fell 0.7%. Amazon fell 3.1%. HP rose 11.5% after it reported fourth-quarter revenue and profit above the estimates Reuters cited; this close file does not print the revenue figure. The Nasdaq Composite is down 7.3% for the month in that story. Early in the day the Nasdaq 100 briefly fell 20% from its record closing high. That was an intraday mark, not a close in bear-market territory. Volume on US exchanges was about 22 billion shares. On the New York Stock Exchange, advancers beat decliners by 2.04 to 1, with 54 new highs and 629 new lows. On the Nasdaq, 2,902 stocks rose and 2,009 fell. The S&amp;P 500 posted 20 new 52-week highs and 11 new lows; the Nasdaq Composite posted 44 new highs and 479 new lows.</p>
+<p>A later Reuters note from Wayne Cole, filed Thursday morning in Sydney, puts Wednesday’s Nvidia last at $149.30, still −3.9%, and says that price was $2.3 trillion short of an October peak of $243.37. The same note says S&amp;P put Nvidia’s credit rating on watch for a possible downgrade, citing weaknesses in management and the board. The Associated Press dispatch uses the same warning and the words “management and governance.” The S&amp;P ratings release itself was not opened. A watch is not a downgrade.</p>
+<p>Yields were not a single print. Chuck Mikolajczak’s Reuters bond file, updated to afternoon trading and still describing the Nasdaq as down 0.7% after a 4.7% intraday drop, is not a 3 p.m. Tradeweb close and was not found labelled as one. In that file the 10-year yield was 4.84%, down 6.2 basis points, after a low of 4.8%, the lowest since 9 September. The 30-year was 5.227%, down 6.6 basis points, after 5.206%, the lowest since 31 August. The 2-year was 4.633%, down 3.8 basis points, after 4.578%, the lowest since 10 November. The gap between the 2-year and the 10-year was 20.5 basis points after narrowing to 19.9, the flattest in two months in that story. A $44 billion sale of 7-year notes had a bid-to-cover ratio of 2.43. CNBC’s Treasury page, updated 4:02 p.m. Eastern, is later and different: the 10-year was more than 3 basis points lower at 4.866%, the 2-year more than 2 basis points lower at 4.65%, and the 30-year more than 3 basis points lower at 5.254%. Cole’s Thursday Asia note had the 10-year at 4.848% after an 11-week trough overnight. Those three clocks were not averaged.</p>
+<p>The dollar story on CNBC, updated 3:44 p.m. Eastern, is before the 4 p.m. equity close. In that story the Nasdaq was “last” down about 1%, which is not the −0.62% close. The dollar index was down 0.22% at 103.62. The euro was up 0.17% at $1.0983. The yen was 159.13 per dollar, with the yen up 0.06%. The dollar was down 0.63% at 0.83 Swiss francs, two decimals only. The Australian dollar was down 0.15% at $0.6628 after a low of $0.6557, the lowest since 3 December in that story. Cole’s Thursday morning marks are a different clock: the dollar index at 103.79, the dollar at 0.8318 francs, the euro at $1.0965 after a recent low of $1.0881, and the yen at 159.15. No AWP franc quote after the Zurich close was opened this morning.</p>
+<p>CME FedWatch in the Mikolajczak afternoon file: a 96.4% chance of a hike of at least 25 basis points in December. Cole on Thursday morning: futures implied a 98% chance of a 25 basis point rise, and speculation of a half-point increase had faded. Those snapshots were not averaged. The Federal Reserve calendar, re-read this morning, sets the next meeting for 8–9 December, with the press conference on 9 December.</p>
+<p>The Bureau of Economic Analysis is the record for the data, released at 8:30 a.m. Eastern on Wednesday. Real gross domestic product increased at a 4.3% annual rate in the third quarter, the second estimate, revised up 0.9 percentage point from the advance estimate of 3.4%. The second quarter was 2.2%, not 3.4%. Real final sales to private domestic purchasers increased 5.8%. The October Personal Income and Outlays release: the PCE price index rose 0.3% on the month and 3.8% on the year. Excluding food and energy it also rose 0.3% on the month and 3.3% on the year. Personal income rose 0.7%. The saving rate was 4.1%. CNBC said the 3.8% year-on-year PCE reading was in line with the Dow Jones forecast it cited, and that the core rate of 3.3% was slightly above a 3.2% consensus. The Reuters Europe story said underlying inflation rose more than expected on an annual basis. A pre-release MarketWatch note, citing a Wall Street Journal poll, had looked for 3.8% headline and 3.2% core. The printed 3.3% core rate is the BEA figure.</p>
+
+<h2>Europe and Switzerland</h2>
+<p>Reuters, Johann M Cherian and Anjana Jayakrishnan Nair: the STOXX Europe 600 gave up early gains and closed 1% lower at 626.03. The same story’s city levels, in the copy carried by Investing.com: London’s Financial Times Stock Exchange 100 index fell 0.38% to 10,426.94, Frankfurt’s DAX fell 1.26% to 24,702.13, and Paris’s CAC 40 fell 0.75% to 7,980.57. Milan’s FTSE MIB fell 1.81% to 47,249.15, Madrid’s IBEX 35 fell 2.00% to 18,635.80, and Lisbon’s PSI 20 fell 0.85% to 9,254.08. A separate Reuters UK close, stamped 18:20, rounds the FTSE 100 to −0.4% at the same 10,426.94 and says the FTSE 250 lost 0.93% to a four-month low. Diana Mandia’s 18:12 Reuters note matches the CAC 40 at 7,980.57, down 0.75%, and the FTSE 100 direction at −0.38% with no level. His DAX was −1.14% with no level, and his STOXX 600 was −0.93%. Those are not the closes used here. At the European close his snapshot had the Dow down 1.52%, the S&amp;P 500 down 2.85% and the Nasdaq down 4.18%. That is the afternoon in New York, not the US close.</p>
+<p>Banks were the weakest STOXX sector, down about 3%. Technology fell for a ninth day in ten. The Reuters UK file puts the aerospace and defence group down 2.8% and precious-metals miners down 2.9%. LSEG-compiled data in the Europe story: an 87% chance the European Central Bank raises borrowing costs by 25 basis points in December. The CNBC dollar story, citing Olaf Sleijpen on Tuesday, says he still saw a December increase as likely and the path after that as unclear. Germany’s economy grew 0.1% in the third quarter, below a preliminary 0.2%, the Europe story said. On the new US tariff proposal, that story says duties on the European Union would be capped at the 15% rate in last year’s deal, and that the Supreme Court struck down an earlier set of tariffs in February. CNBC’s live blog, citing a senior US official, says the new levies are under Section 301 of the Trade Act of 1974, will not stack on existing duties, and that China is the exception: a 20% tariff on top of the 25% imposed in 2018. The Mikolajczak bond file says the proposal included a 20% rate on China and does not spell out that stacking. Cole says the new rates would not stack on the July tariffs and were unlikely to be imposed until February or March, covering 14 partners including China, Japan and the European Union. Jamieson Greer, the US Trade Representative, told CNBC the proposal largely sticks to rates already set in trade deals, and that some may be topped up by a few percentage points. Those sentences are not one schedule.</p>
+<p>AWP via Agefi, 18:25: the Swiss Market Index lost 0.47% to 14,664.92, the low of the session. The Swiss Leader Index fell 0.42% to 2,351.58. The Swiss Performance Index fell 0.51% to 20,586.33. The cash.ch ticker at 17:31 prints the same SMI last, 14,664.92, down 68.97 points. The cash.ch article body rounds the SMI to 14,665 and the SPI to 20,601, down 0.4%. The Agefi levels are the ones used. Agefi’s leaders: Amrize +2.4%, Lindt +2.2%, Schindler +1.4%. VAT Group −4.0%. Among the heavyweights, ABB −3.1%, Roche −0.9%, Novartis −0.3%, Nestlé +1.0%. The cash.ch body has ABB −3.2% and VAT −4.1%. Those hundredths were not averaged. Givaudan fell 2.3% in the Agefi copy after the European Commission fined three fragrance groups a total of 471.9 million euros; the Vernier firm said the head of its perfume and beauty unit, Maurizio Volpi, was leaving. No SMIM level was in the Agefi close that was opened.</p>
+
+<h2>Asia and commodities</h2>
+<p>Nikkei Indexes’ profile, read after the Tokyo bell, is the Thursday close: the Nikkei Stock Average finished at 57,499.16, up 487.54 points, or 0.86%. Open 57,429.54 at 09:00, high 58,251.93 at 10:25, low 57,288.10 at 15:20, divisor 29.66435840. Cole’s “Nikkei gained 1.6%,” in a story updated at 4:10 p.m. in Sydney, is 14:10 in Tokyo, before the 15:00 cash close, and is not this print. The Associated Press running marks, including a Nikkei of 57,768.92, also sit above the official close and are not used as the close. The Nikkei daily-summary page still showed Wednesday when it was opened: 57,011.62, down 2.78%, with 127 stocks up, 96 down and 2 unchanged. That is Wednesday’s breadth, not Thursday’s. No Thursday breadth was on that page.</p>
+<p>Seoul’s closing level was not on a wire opened this morning. Cole’s pre-close mark had South Korea’s main index up 1.9%. The Associated Press had the Kospi up 1.2% at 4,755.29, without a close stamp in the portion retrieved, and that figure is not treated as the close. Cole’s month-to-date lines, in the same pre-close note: Japan down 8%, South Korea down 16%, Taiwan down 15%. Hong Kong and Shanghai were still in their afternoon sessions at about 07:35 Zurich. No closing level for either is used. The Associated Press had the Hang Seng up 1.9% at 22,373.81 and the Shanghai Composite down less than 0.1% at 3,475.46. Those are not labelled closes here.</p>
+<p>Reuters via Business Recorder: the S&amp;P/ASX 200 closed up 0.8% at 8,763.80. Mining stocks rose 3.9%, their best day in three weeks in that story, and the sector was up 5% for the week after losing nearly 13% last week. BHP and Rio Tinto each rose about 3.5%. Energy rose 2.7%. Private capital spending rose 12.2% in the third quarter, against a 4.4% rise expected in that story. New Zealand’s S&amp;P/NZX 50 fell 0.4% to 13,986.60. A quote board on the same Business Recorder page showed a Nikkei last of 57,784.93. That board is not the Nikkei close.</p>
+<p>Oil settlements agree. Xinhua, filed 04:14 on 26 November: January Brent on ICE rose $3.21, or 3.51%, to $94.61. January West Texas Intermediate on the New York Mercantile Exchange rose $1.63, or 1.99%, to $83.68. CNBC, updated 3:36 p.m. Eastern, has the same lasts and rounds the moves to 3.5% and 2%. The reason CNBC gives is a statement by Yemen’s Houthis that they had attacked Saudi Arabia’s Ras Tanura refinery and Riyadh’s financial district. That is their statement. PVM’s Tamas Varga, in that story, also pointed to short covering before the holiday. US crude inventories rose 1.1 million barrels to 418.9 million in the week ended 20 November, the Energy Information Administration said, against a Reuters poll for a rise of 1.5 million. CNBC says OPEC+ ministers meet on 29 November on 2027 output policy. Cole’s Thursday futures, Brent $95.25 and US crude $84.32, are not the settlement.</p>
+<p>Gold is two markets. CNBC: December US gold futures settled down 0.73% at $3,535.8. Spot gold was down 0.1% at $3,577.28, after trading at its lowest since August 2025 and, at one point, under $3,500 for the first time since September 2025 in that story. Cole’s Thursday spot, up 0.2% at $3,589, and his line that gold had fallen over 7% this month, are not the settlement.</p>
+
+<h2>Long-term ETF lens</h2>
+<p>VWRA is one accumulating share class of the Vanguard FTSE All-World UCITS ETF, an Undertaking for Collective Investment in Transferable Securities, listed in francs on SIX. It is built to track the FTSE All-World Index by owning a representative sample of the large and mid-sized companies in that index. The ongoing charge is 0.14%. It does not pay a dividend; the income stays inside the fund. A one-day drop in the franc price does not change that structure.</p>
+<p>What did change on Wednesday is the currency gap inside the same fund. The dollar net asset value fell 0.67%, from a header price of $177.56. The history row is $177.5639, down $1.20. The SIX price fell 2.55%, or 3.78 francs, to 144.56. Both stamps read “at closure 25 Nov 2026.” On Tuesday the franc price and the dollar net asset value had moved in opposite directions. On Wednesday they fell together, and the franc price fell by more. That is the Swiss-franc translation of a global equity fund on a day when the dollar was softer against the franc in the currency stories above, not a change in the holdings list.</p>
+<p>Holdings and country weights are still as at 31 October. Apple was 4.74363% of the fund, Nvidia 4.54553%, Microsoft 3.69160%. The United States was 62.83%. Switzerland was 2.08%. The fund held 3,574 stocks against 4,199 in the benchmark. The price-to-earnings ratio was 19.6 times. Share-class assets were $62.19 billion and total assets $88.84 billion, both still dated 31 October on the page. The 52-week franc high and low are unchanged at 162.38 and 129.36, and the net-asset-value range is unchanged at $195.62 and $161.35. The stamp on those ranges has moved to “at closure 26 Nov 2026,” while the price itself is still Wednesday’s.</p>
+<div class="note">
+  <p>For a holder who is not trading the week, Wednesday was another mark lower in a fund that is still a global equity basket, still mostly American shares, and still above both franc alerts. The distance that matters this morning is 4.56 francs, not the holiday bounce in futures.</p>
+</div>
+
+<h2>Hottest tactical</h2>
+<p>The live tactical mark is a rebound that US cash cannot confirm, because the New York Stock Exchange is closed today. Cole, before the European open: EURO STOXX 50 futures were up 2.3%, DAX futures up 2.1%, FTSE futures up 1.4%, S&amp;P 500 futures up 0.7% and Nasdaq futures up 1.1%. Tokyo then closed up 0.86%, not the 1.6% in that earlier sentence, and Sydney closed up 0.8%. The oil settlement is the sharpest finished move: January Brent up 3.51% to $94.61 after the Houthi statement. That is a one-day risk premium in a contract, not a new long-run price for the fund. Futures can reverse before Zurich opens. They are not a cash trend.</p>
+
+<h2>Biggest risk</h2>
+<div class="note risk">
+  <p>VWRA at 144.56 francs is 4.56 francs, or about 3.2% of the price, above 140, and 9.56 francs above 135. Neither alert was hit. The 52-week high of 162.38 is 17.82 francs above Wednesday’s close, which is 11.0% of that high, an arithmetic gap and not a Vanguard statistic. A further rise in the franc against the dollar would close more of the gap to 140 even if the dollar net asset value only drifts. The fund is still 62.83% United States and 4.55% Nvidia on the 31 October holdings, Nvidia fell another 3.9% on Wednesday, and a ratings watch is now part of that story. December is priced for a Federal Reserve increase, on the two FedWatch clocks above, with core PCE at 3.3% on the year. The holiday bounce does not retire that combination.</p>
+</div>
+
+<h2>Calendar</h2>
+<ul>
+  <li>Thursday 26 November: US cash equities closed, New York Stock Exchange holiday calendar. CNBC’s Treasury page says the bond market is closed today and closes at 2 p.m. Eastern on Friday.</li>
+  <li>Friday 27 November: New York Stock Exchange early close at 1:00 p.m. Eastern, 1:15 p.m. for eligible options. Late sessions on NYSE American, NYSE Arca, NYSE National and NYSE Texas close at 5:00 p.m. Eastern.</li>
+  <li>Sunday 29 November: OPEC+ meetings on 2027 output policy, as stated in the CNBC oil story. That date was not re-read on an OPEC calendar.</li>
+  <li>8–9 December: Federal Open Market Committee meeting. The Board’s December calendar lists the policy decision on the 9th and the press conference that day. CME odds above are snapshots, not the decision.</li>
+</ul>
+
+<h2>VWRA in Swiss francs</h2>
+<p>Wednesday’s SIX close, Vanguard’s Swiss product page, read this morning: 144.56 francs, down 3.78 francs, or 2.55%. Dollar net asset value $177.5639, shown in the header as $177.56, down $1.20, or 0.67%. Both stamped at closure 25 November 2026. Alerts at 140 and 135 were not hit.</p>
+<div class="chart-wrap">
+  <svg viewBox="0 0 640 168" role="img" aria-labelledby="chartTitle chartDesc">
+    <title id="chartTitle">VWRA Swiss-franc closes, 12 to 25 November 2026</title>
+    <desc id="chartDesc">Ten closing prices from 158.18 francs on 12 November to 144.56 on 25 November. Horizontal lines mark the 140 and 135 franc alerts. The price remains above both.</desc>
+    <rect x="0" y="0" width="640" height="168" fill="#fffdf8"/>
+    <line x1="48" y1="93" x2="608" y2="93" stroke="#9a4310" stroke-dasharray="4 3" stroke-width="1"/>
+    <line x1="48" y1="108.6" x2="608" y2="108.6" stroke="#9a4310" stroke-dasharray="2 3" stroke-width="1"/>
+    <text x="612" y="96" font-size="11" font-family="Georgia, serif" fill="#9a4310">140</text>
+    <text x="612" y="112" font-size="11" font-family="Georgia, serif" fill="#9a4310">135</text>
+    <polyline fill="none" stroke="#1c1915" stroke-width="2"
+      points="52,36.2 113.8,39.4 175.6,42.1 237.3,53.2 299.1,52.2 360.9,53.6 422.7,71.5 484.4,56.6 546.2,66.9 608,78.8"/>
+    <circle cx="608" cy="78.8" r="3.5" fill="#8f2d2d"/>
+    <text x="52" y="146" font-size="11" font-family="Georgia, serif" fill="#5e584e">12 Nov</text>
+    <text x="400" y="146" font-size="11" font-family="Georgia, serif" fill="#5e584e">20 Nov</text>
+    <text x="560" y="146" font-size="11" font-family="Georgia, serif" fill="#5e584e">25 Nov</text>
+    <text x="48" y="14" font-size="11" font-family="Georgia, serif" fill="#5e584e">Francs per share, SIX close. Scale 132 to 164. Alerts drawn, not hit.</text>
+  </svg>
+</div>
+<p class="caption">Source: Vanguard Switzerland historical prices, page read 26 November 2026. The line is the market price in francs, not the dollar net asset value. The 11 November row that was on earlier reads is no longer in the ten-row table.</p>
+<table>
+  <thead>
+    <tr><th>Close</th><th>Francs</th><th>NAV, dollars</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>25 Nov</td><td>144.56</td><td>177.5639</td></tr>
+    <tr><td>24 Nov</td><td>148.34</td><td>178.7613</td></tr>
+    <tr><td>23 Nov</td><td>151.64</td><td>178.3265</td></tr>
+    <tr><td>20 Nov</td><td>146.88</td><td>172.9725</td></tr>
+    <tr><td>19 Nov</td><td>152.62</td><td>178.8118</td></tr>
+    <tr><td>18 Nov</td><td>153.06</td><td>181.7240</td></tr>
+    <tr><td>17 Nov</td><td>152.74</td><td>182.5667</td></tr>
+    <tr><td>16 Nov</td><td>156.28</td><td>184.7690</td></tr>
+    <tr><td>13 Nov</td><td>157.16</td><td>187.9772</td></tr>
+    <tr><td>12 Nov</td><td>158.18</td><td>188.6596</td></tr>
+  </tbody>
+</table>
+<p>Arithmetic on that table, not a Vanguard statistic: from 12 November to 25 November the franc price fell 13.62 francs, or 8.6%, and the net asset value fell $11.0957, or 5.9%. Wednesday’s 144.56 is the low franc close on the ten rows. Friday 20 November, at 146.88, is no longer the low.</p>
+
+<h2>Fact and speculation</h2>
+<p><strong>Fact, from the pages opened.</strong> The three US cash indexes, the European and Swiss closes, the Tokyo profile close, the Sydney close, the oil settlement, the BEA inflation and GDP releases, the Vanguard price and the unchanged October holdings, and the New York Stock Exchange and Federal Reserve calendars.</p>
+<p><strong>Not yet a close.</strong> Seoul. Hong Kong and Shanghai, which were still open. Cole’s Nikkei percentage. Any Associated Press Asia level that does not match the Nikkei profile. Thursday morning equity futures. Cole’s Brent at $95.25 and gold at $3,589.</p>
+<p><strong>Two clocks, not an average.</strong> Treasury yields at three times of day. The dollar at 3:44 p.m. Eastern and again on Thursday morning in Sydney. FedWatch at 96.4% in the afternoon bond file and 98% in Cole’s morning note. Mandia’s DAX percentage against the Reuters city level. Agefi against the rounded cash.ch body on ABB, VAT and the SPI.</p>
+<p><strong>A wire that contradicts the statistical agency.</strong> Mikolajczak’s bond file calls the 4.3% growth rate a second-quarter revision from 3.4%. The BEA release is the third-quarter second estimate, revised from an advance estimate of 3.4%, and it puts second-quarter growth at 2.2%. The BEA release is the one used above.</p>
+<p><strong>Statements and forecasts, not findings.</strong> The Houthi claim of an attack on Ras Tanura. An Iranian Revolutionary Guards account, via state media in the CNBC oil story, that a container ship was targeted on Tuesday near the Strait of Hormuz. S&amp;P’s ratings watch, as described by Reuters and the Associated Press, not a ratings-agency release opened here. Greer’s remark that some tariffs may be topped up. Cole’s February-or-March timing. JPMorgan’s view, quoted by Cole, that the macro effect is likely to be modest. Analyst comments from Varga, WisdomTree and others. A Reuters poll, in the Europe story, that expected European shares to reach record highs in 2027. The December rate increase is priced on the snapshots above. It has not been decided. Personal allegations about Nvidia’s management that circulated earlier this month were not re-opened as findings this morning.</p>
+
+<h2>Sources</h2>
+<ul class="src">
+  <li><a href="https://www.investing.com/news/economy-news/nasdaq-futures-slide-over-2-on-fresh-us-tariff-concerns-inflation-data-in-focus-5050138">Reuters US equity close, Valetkevitch and Mathur, via Investing.com</a></li>
+  <li><a href="https://apnews.com/article/wall-street-stocks-dow-nasdaq-94fdb0ecb060ec65c0b02879ce0d2d09">Associated Press, how the major US indexes fared on 25 November</a></li>
+  <li><a href="https://www.cnbc.com/2026/11/24/stock-market-today-live-updates-.html">CNBC, US equity close, updated 4:17 p.m. Eastern</a></li>
+  <li><a href="https://www.livemint.com/market/us-yields-fall-but-move-off-lows-as-stocks-pare-sharp-losses-11795635802694.html">Reuters Treasuries, Mikolajczak, afternoon update, via Mint</a></li>
+  <li><a href="https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html">CNBC Treasury yields, updated 4:02 p.m. Eastern</a></li>
+  <li><a href="https://www.cnbc.com/2026/11/25/forex-dollar-currency-federal-reserve-euro.html">Reuters dollar story via CNBC, updated 3:44 p.m. Eastern</a></li>
+  <li><a href="https://au.investing.com/news/stock-market-news/asia-shares-bounce-ai-and-tariffs-lurk-in-background-4797156">Reuters Asia and currencies, Cole, Thursday morning, via Investing.com</a></li>
+  <li><a href="https://www.bea.gov/news/2026/personal-income-and-outlays-october-2026">Bureau of Economic Analysis, Personal Income and Outlays, October 2026</a></li>
+  <li><a href="https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026">Bureau of Economic Analysis, GDP second estimate, third quarter 2026</a></li>
+  <li><a href="https://www.marketwatch.com/story/u-s-treasury-yields-fall-ahead-of-pce-inflation-data-9bb0bc00">MarketWatch, pre-release Wall Street Journal poll for the PCE index</a></li>
+  <li><a href="https://www.streetinsider.com/Reuters/European+stocks+end+lower+as+rate+hike+fears%2C+AI+doubts+hammer+banks+and+tech/27397699.html">Reuters Europe close, Cherian and Nair, via StreetInsider</a></li>
+  <li><a href="https://br.investing.com/news/stock-market-news/acoes-europeias-fecham-em-baixa-com-temores-de-alta-de-juros-e-duvidas-sobre-ia-2138313">Same Reuters Europe story with city levels, via Investing.com</a></li>
+  <li><a href="https://live.euronext.com/en/financial-news/uk-stocks-fall-banks-miners-track-wall-street-selloff">Reuters UK close</a></li>
+  <li><a href="https://www.boursorama.com/bourse/actualites/l-europe-finit-dans-le-rouge-entrainee-par-les-pertes-de-wall-street-aeb5d3249fe286fb9bce161a6ab42247">Reuters, Mandia, 18:12, via Boursorama. Not the DAX close used here</a></li>
+  <li><a href="https://agefi.com/actualites/marches/la-bourse-suisse-recule-apres-la-tech-et-les-droits-de-douane">AWP Swiss close via Agefi, 18:25</a></li>
+  <li><a href="https://www.cash.ch/news/top-news/borsen-ticker-schweizer-borse-schliesst-auf-tagestief-abb-an-smi-tabellenende-ams-osram-von-samsung-partnerschaft-beflugelt-swatch-profitieren-von-heraufstufung-richemont-mit-verlusten-987867">cash.ch / AWP Swiss close. Ticker matches Agefi; the body rounds</a></li>
+  <li><a href="https://indexes.nikkei.co.jp/en/nkave/index/profile?idx=nk225">Nikkei Indexes profile, Thursday close</a></li>
+  <li><a href="https://indexes.nikkei.co.jp/en/nkave/archives/summary">Nikkei Indexes daily summary, still Wednesday when opened</a></li>
+  <li><a href="https://apnews.com/article/stocks-markets-ai-oil-bonds-320cd8c9c286a7773797bf2f478ef314">Associated Press Asia dispatch. Running marks, not the Tokyo close</a></li>
+  <li><a href="https://www.brecorder.com/news/40450833">Reuters Australia close via Business Recorder. Ignore the page’s Nikkei board</a></li>
+  <li><a href="https://english.news.cn/20261126/7cc9effceecb473d93187a62e40a5b34/c.html">Xinhua, Wednesday crude settlement</a></li>
+  <li><a href="https://www.cnbc.com/2026/11/25/oil-wti-brent-hormuz-middle-east.html">CNBC oil, same settlement lasts, updated 3:36 p.m. Eastern</a></li>
+  <li><a href="https://www.cnbc.com/2026/11/25/gold-metals-federal-reserve-inflation.html">CNBC gold, futures settlement and spot</a></li>
+  <li><a href="https://www.ch.vanguard/en/private-investor/product/etf/equity/9679/ftse-all-world-ucits-etf-usd-accumulating">Vanguard Switzerland, VWRA product page</a></li>
+  <li><a href="https://www.nyse.com/trade/hours-calendars/">New York Stock Exchange holiday calendar</a></li>
+  <li><a href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm?2026=">Federal Reserve, 2026 FOMC calendar</a></li>
+  <li><a href="https://www.federalreserve.gov/newsevents/2026-december.htm">Federal Reserve Board calendar, December 2026</a></li>
+</ul>
+
+<footer>
+  <p>This note is a reading of public market reports for a long-term holder. It is not investment advice, not a recommendation to buy or sell, and not a forecast. Prices and odds move. Alerts at 140 and 135 francs are levels the reader asked to watch, not targets. Figures are taken from the sources above as read on the morning of 26 November 2026. Where two accounts disagreed, both are shown and they were not averaged.</p>
+</footer>
+
+</body>
+</html>
